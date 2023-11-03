@@ -29,8 +29,10 @@ func _physics_process(delta):
 	var sprite = $Beaver
 	if velocity.x > 0:
 		sprite.flip_h = false
+		sprite.offset.x = -100
 	elif velocity.x < 0:
 		sprite.flip_h = true
+		sprite.offset.x = 100
 		
 
 	move_and_slide()
