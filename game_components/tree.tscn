@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://cq1fqto50t6or"]
+
+[ext_resource type="Script" path="res://game_components/tree.gd" id="1_77oj4"]
+[ext_resource type="Texture2D" uid="uid://dt0cpc2dff3l6" path="res://assets/tree.png" id="2_k6u4l"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bpj8v"]
+radius = 11.0
+height = 36.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ba2wx"]
+radius = 10.198
+
+[node name="Tree" type="Area2D"]
+collision_layer = 2
+collision_mask = 0
+monitoring = false
+script = ExtResource("1_77oj4")
+interact_label = "Árbol"
+interact_type = "tree"
+
+[node name="Pine" type="Sprite2D" parent="."]
+position = Vector2(2.00001, -84)
+scale = Vector2(1.63095, 1.63095)
+texture = ExtResource("2_k6u4l")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(2, -16)
+shape = SubResource("CapsuleShape2D_bpj8v")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, -16)
+shape = SubResource("CircleShape2D_ba2wx")

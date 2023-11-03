@@ -1,20 +1,52 @@
-[gd_scene load_steps=4 format=3 uid="uid://b7dy8sxhaje0g"]
+[gd_scene load_steps=8 format=3 uid="uid://b7dy8sxhaje0g"]
 
 [ext_resource type="PackedScene" uid="uid://bt3q8dtknnanx" path="res://Beaver.tscn" id="1_hmtq2"]
-[ext_resource type="PackedScene" uid="uid://bber3wjlxr5bk" path="res://Tree.tscn" id="2_elgw6"]
-[ext_resource type="PackedScene" uid="uid://gq4w3v4oeoem" path="res://Day_Night.tscn" id="3_vd6ra"]
+[ext_resource type="PackedScene" uid="uid://bpdg2mqp8wyo4" path="res://player.tscn" id="2_lhuce"]
+[ext_resource type="Texture2D" uid="uid://brcqb7tbvxuqn" path="res://assets/tilemap.png" id="2_tt6sg"]
+[ext_resource type="PackedScene" uid="uid://cq1fqto50t6or" path="res://game_components/tree.tscn" id="3_8gjy8"]
+[ext_resource type="PackedScene" uid="uid://gq4w3v4oeoem" path="res://Day_Night.tscn" id="5_0sb1h"]
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_abfst"]
+texture = ExtResource("2_tt6sg")
+1:11/size_in_atlas = Vector2i(9, 9)
+1:11/0 = 0
+1:1/size_in_atlas = Vector2i(9, 9)
+1:1/0 = 0
+11:1/size_in_atlas = Vector2i(9, 9)
+11:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_62qj0"]
+sources/0 = SubResource("TileSetAtlasSource_abfst")
+
+[node name="Forest" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("2_lhuce")]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_62qj0")
+format = 2
+layer_0/tile_data = PackedInt32Array(983047, 65536, 11, 1572871, 65536, 11, 2162695, 65536, 11, 983056, 65536, 11, 1572880, 65536, 11, 2162704, 65536, 11, 393223, 65536, 11, 393232, 65536, 11, 393241, 65536, 11, 983065, 65536, 11, 393250, 65536, 1, 983074, 65536, 1, 1572898, 65536, 1, 2162722, 65536, 1, 2162713, 65536, 11, 1572889, 65536, 11)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_hmtq2")]
 position = Vector2(533, 316)
 
-[node name="Area2D" parent="." instance=ExtResource("2_elgw6")]
-position = Vector2(607, 334)
+[node name="Interactables" type="Node2D" parent="."]
 
-[node name="Area2D2" parent="." instance=ExtResource("2_elgw6")]
-position = Vector2(233, 319)
+[node name="Trees" type="Node2D" parent="Interactables"]
 
-[node name="Day_Night" parent="." instance=ExtResource("3_vd6ra")]
-position = Vector2(-2012, -374)
-scale = Vector2(7.81495, 2.51046)
+[node name="Tree" parent="Interactables/Trees" instance=ExtResource("3_8gjy8")]
+position = Vector2(775, 381)
+
+[node name="Tree2" parent="Interactables/Trees" instance=ExtResource("3_8gjy8")]
+position = Vector2(255, 386)
+
+[node name="Tree3" parent="Interactables/Trees" instance=ExtResource("3_8gjy8")]
+position = Vector2(633, 119)
+
+[node name="Tree4" parent="Interactables/Trees" instance=ExtResource("3_8gjy8")]
+position = Vector2(732, 605)
+
+[node name="Tree5" parent="Interactables/Trees" instance=ExtResource("3_8gjy8")]
+position = Vector2(347, 563)
+
+[node name="DaytoNIght" parent="." instance=ExtResource("5_0sb1h")]
