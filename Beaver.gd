@@ -11,7 +11,7 @@ var target = Vector2.ZERO
 
 func _process(delta):
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
-		var mouse_pos = get_viewport().get_mouse_position()
+		var mouse_pos = get_global_mouse_position()
 		target = Vector2(mouse_pos.x, mouse_pos.y)
 
 

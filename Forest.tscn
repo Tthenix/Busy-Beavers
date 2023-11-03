@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://b7dy8sxhaje0g"]
+[gd_scene load_steps=4 format=3 uid="uid://b7dy8sxhaje0g"]
 
 [ext_resource type="PackedScene" uid="uid://bt3q8dtknnanx" path="res://Beaver.tscn" id="1_hmtq2"]
-[ext_resource type="PackedScene" uid="uid://blnmrv1noluuw" path="res://Tree.tscn" id="2_elgw6"]
+[ext_resource type="PackedScene" uid="uid://bber3wjlxr5bk" path="res://Tree.tscn" id="2_elgw6"]
+[ext_resource type="PackedScene" uid="uid://gq4w3v4oeoem" path="res://Day_Night.tscn" id="3_vd6ra"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -10,3 +11,10 @@ position = Vector2(533, 316)
 
 [node name="Area2D" parent="." instance=ExtResource("2_elgw6")]
 position = Vector2(607, 334)
+
+[node name="Area2D2" parent="." instance=ExtResource("2_elgw6")]
+position = Vector2(233, 319)
+
+[node name="Day_Night" parent="." instance=ExtResource("3_vd6ra")]
+position = Vector2(-2012, -374)
+scale = Vector2(7.81495, 2.51046)
