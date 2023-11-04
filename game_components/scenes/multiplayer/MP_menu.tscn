@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c666ncbp8xpb2"]
 
-[ext_resource type="Script" path="res://MultiplayerControl.gd" id="1_ipaqd"]
-[ext_resource type="Script" path="res://LineEdit.gd" id="2_uviww"]
+[ext_resource type="Script" path="res://game_components/scenes/multiplayer/MultiplayerControl.gd" id="1_ipaqd"]
+[ext_resource type="Script" path="res://game_components/scenes/multiplayer/LineEdit.gd" id="2_uviww"]
 
 [node name="Control" type="Control"]
 layout_mode = 3

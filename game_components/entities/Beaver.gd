@@ -102,6 +102,9 @@ func update_interactions():
 		if interaction.interact_type == "dam":
 			if holding:
 				label_text = interaction.interact_label
+		elif interaction.interact_type == "tree_log":
+			if !interaction.heldBy:
+				label_text = interaction.interact_label
 		else:
 			label_text = interaction.interact_label
 	interaction_label.text = label_text
@@ -126,8 +129,9 @@ func execute_interaction(action: String):
 				"tree":
 					curr_interaction.interact.rpc(action, playerId)
 				"tree_log":
-					pickUpElement(curr_interaction)
-					curr_interaction.interact.rpc(action, playerId)
+					if !curr_interaction.heldBy:
+						pickUpElement(curr_interaction)
+						curr_interaction.interact.rpc(action, playerId)
 
 
 func pickUpElement(element: Interactable):

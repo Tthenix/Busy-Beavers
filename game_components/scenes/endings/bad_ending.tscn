@@ -1,0 +1,43 @@
+[gd_scene load_steps=2 format=3 uid="uid://b31absyuaj8sw"]
+
+[ext_resource type="Texture2D" uid="uid://cvpmou354jpqi" path="res://assets/DALL·E 2023-11-04 17.21.07 - Cartoon of Two friendly beavers in a lodge.png" id="1_dlu28"]
+
+[node name="BadEnding" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Dall·e2023-11-0417_21_07-CartoonOfTwoFriendlyBeaversInALodge" type="Sprite2D" parent="ColorRect"]
+position = Vector2(583, 345)
+scale = Vector2(0.298828, 0.298828)
+texture = ExtResource("1_dlu28")
+
+[node name="Label" type="Label" parent="ColorRect"]
+offset_left = 152.0
+offset_top = 50.0
+offset_right = 1034.0
+offset_bottom = 158.0
+theme_override_font_sizes/font_size = 24
+text = "Sin un refugio, te has transformado en alimento de lobos junto con tu amigo
+¿Que podrías haber hecho diferente?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="ColorRect"]
+offset_left = 506.0
+offset_top = 550.0
+offset_right = 653.0
+offset_bottom = 600.0
+text = "Intentar de nuevo"

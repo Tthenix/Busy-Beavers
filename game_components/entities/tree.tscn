@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cq1fqto50t6or"]
 
-[ext_resource type="Script" path="res://game_components/tree.gd" id="1_77oj4"]
+[ext_resource type="Script" path="res://game_components/entities/tree.gd" id="1_77oj4"]
 [ext_resource type="Texture2D" uid="uid://dt0cpc2dff3l6" path="res://assets/tree.png" id="2_k6u4l"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bpj8v"]

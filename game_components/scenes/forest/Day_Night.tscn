@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://gq4w3v4oeoem"]
 
-[ext_resource type="Script" path="res://Day_Night.gd" id="1_x2na0"]
+[ext_resource type="Script" path="res://game_components/scenes/forest/Day_Night.gd" id="1_x2na0"]
 
 [sub_resource type="Animation" id="Animation_kfiqd"]
 length = 0.001

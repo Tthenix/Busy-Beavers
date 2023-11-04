@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://de7owlbkouy7p"]
 
-[ext_resource type="Script" path="res://game_components/BeaverDam.gd" id="1_cwae1"]
+[ext_resource type="Script" path="res://game_components/entities/BeaverDam.gd" id="1_cwae1"]
 [ext_resource type="Texture2D" uid="uid://blv7rulwh35im" path="res://assets/dam-sheet.png" id="2_fe3lt"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hswyf"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dasefppy36n0u"]
 
-[ext_resource type="Texture2D" uid="uid://crp4ail0xn1m2" path="res://assets/tree_trunk.png" id="1_mpmlr"]
+[ext_resource type="Texture2D" uid="uid://crp4ail0xn1m2" path="res://assets/tree_trunk.png" id="1_hotao"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8eh3m"]
 radius = 13.0384
@@ -10,7 +10,7 @@ radius = 13.0384
 [node name="TreeTrunk" type="Sprite2D" parent="."]
 position = Vector2(2, -84)
 scale = Vector2(1.631, 1.631)
-texture = ExtResource("1_mpmlr")
+texture = ExtResource("1_hotao")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, -11)

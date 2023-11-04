@@ -14,8 +14,8 @@ func _process(delta):
 @rpc("any_peer", "call_local")
 func interact(action: String, player_id):
 	print(action)
-	var trunk = preload("res://game_components/tree_trunk.tscn").instantiate()
-	var tree_log = preload("res://game_components/tree_log.tscn").instantiate()
+	var trunk = preload("res://game_components/entities/tree_trunk.tscn").instantiate()
+	var tree_log = preload("res://game_components/entities/tree_log.tscn").instantiate()
 	get_tree().root.add_child(trunk)
 	get_tree().root.add_child(tree_log)
 	trunk.global_position = self.global_position

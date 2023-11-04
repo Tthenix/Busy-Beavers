@@ -1,13 +1,13 @@
 [gd_scene load_steps=11 format=3 uid="uid://b7dy8sxhaje0g"]
 
-[ext_resource type="Script" path="res://Forest.gd" id="1_0u8wo"]
-[ext_resource type="PackedScene" uid="uid://bt3q8dtknnanx" path="res://Beaver.tscn" id="1_hmtq2"]
+[ext_resource type="Script" path="res://game_components/scenes/forest/Forest.gd" id="1_0u8wo"]
+[ext_resource type="PackedScene" uid="uid://bt3q8dtknnanx" path="res://game_components/entities/Beaver.tscn" id="1_hmtq2"]
 [ext_resource type="Texture2D" uid="uid://brcqb7tbvxuqn" path="res://assets/tilemap.png" id="2_tt6sg"]
-[ext_resource type="PackedScene" uid="uid://cq1fqto50t6or" path="res://game_components/tree.tscn" id="3_8gjy8"]
-[ext_resource type="PackedScene" uid="uid://gq4w3v4oeoem" path="res://Day_Night.tscn" id="5_0sb1h"]
-[ext_resource type="PackedScene" uid="uid://ddw0mw65ab3hy" path="res://game_components/tree_log.tscn" id="6_ftnsd"]
-[ext_resource type="PackedScene" uid="uid://dn0rvq367rhuv" path="res://Ui.tscn" id="6_qsral"]
-[ext_resource type="PackedScene" uid="uid://de7owlbkouy7p" path="res://game_components/beaver_dam.tscn" id="7_vahh6"]
+[ext_resource type="PackedScene" uid="uid://cq1fqto50t6or" path="res://game_components/entities/tree.tscn" id="3_8gjy8"]
+[ext_resource type="PackedScene" uid="uid://gq4w3v4oeoem" path="res://game_components/scenes/forest/Day_Night.tscn" id="5_0sb1h"]
+[ext_resource type="PackedScene" uid="uid://ddw0mw65ab3hy" path="res://game_components/entities/tree_log.tscn" id="6_ftnsd"]
+[ext_resource type="PackedScene" uid="uid://dn0rvq367rhuv" path="res://game_components/scenes/forest/Ui.tscn" id="6_qsral"]
+[ext_resource type="PackedScene" uid="uid://de7owlbkouy7p" path="res://game_components/entities/beaver_dam.tscn" id="7_vahh6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_abfst"]
 texture = ExtResource("2_tt6sg")

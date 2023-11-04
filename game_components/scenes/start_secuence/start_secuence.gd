@@ -19,7 +19,6 @@ func _ready():
 
 
 func time_step():
-	print(stage)
 	$HBoxContainer.get_child(stage).visible = false
 	stage += 1
 	var nextStage = $HBoxContainer.get_child(stage)
@@ -31,8 +30,8 @@ func time_step():
 		start_game()
 
 func start_game():
-	var scene = load("res://Forest.tscn").instantiate()
-	get_tree().root.add_child(scene)
+	var scene = load("res://game_components/scenes/forest/Forest.tscn").instantiate()
+	get_tree().root.add_child(scene) 
 	self.hide()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

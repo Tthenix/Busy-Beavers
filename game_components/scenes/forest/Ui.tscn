@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://dn0rvq367rhuv"]
 
-[ext_resource type="Script" path="res://Ui.gd" id="1_7w4ux"]
+[ext_resource type="Script" path="res://game_components/scenes/forest/Ui.gd" id="1_7w4ux"]
 [ext_resource type="Texture2D" uid="uid://ck1d3og5vhx1o" path="res://assets/beaver.png" id="1_edxmv"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5tdv7"]

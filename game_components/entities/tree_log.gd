@@ -16,6 +16,8 @@ func interact(action, playerId):
 	if action == "use":
 		self.queue_free()
 		return
-	heldBy = playerId
 	if (playerId == heldBy):
 		heldBy = null
+	else:
+		heldBy = playerId
+		

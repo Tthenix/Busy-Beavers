@@ -1,0 +1,45 @@
+[gd_scene load_steps=2 format=3 uid="uid://du0vgak2gpos4"]
+
+[ext_resource type="Texture2D" uid="uid://cvpmou354jpqi" path="res://assets/DALL·E 2023-11-04 17.21.07 - Cartoon of Two friendly beavers in a lodge.png" id="1_7shri"]
+
+[node name="GoodEnding" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Dall·e2023-11-0417_21_07-CartoonOfTwoFriendlyBeaversInALodge" type="Sprite2D" parent="."]
+position = Vector2(583, 345)
+scale = Vector2(0.298828, 0.298828)
+texture = ExtResource("1_7shri")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 47.0
+offset_right = 876.0
+offset_bottom = 155.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "¡Felicitaciones!
+Has trabajado en equipo y sobrevivido la noche"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 535.0
+offset_top = 545.0
+offset_right = 636.0
+offset_bottom = 595.0
+text = "Salir"

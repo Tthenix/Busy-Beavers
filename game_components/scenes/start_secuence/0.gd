@@ -7,7 +7,7 @@ func _ready():
 	for i in GameManager.Players:
 		names.push_back(GameManager.Players[i].name)
 	if names:
-		text =  names[0] +"y "+names[1]+" fueron expulsados de su familia.
+		text =  names[0] +" y "+names[1] + " fueron expulsados de su familia.
 Ahora deben construir una represa nueva para sobrevivir a los depredadores"
 
 

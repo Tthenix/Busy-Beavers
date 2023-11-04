@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://f2tmqvx8pp5o"]
 
-[ext_resource type="Script" path="res://start_secuence.gd" id="1_dhwjn"]
-[ext_resource type="Script" path="res://0.gd" id="2_hyqja"]
+[ext_resource type="Script" path="res://game_components/scenes/start_secuence/start_secuence.gd" id="1_dhwjn"]
+[ext_resource type="Script" path="res://game_components/scenes/start_secuence/0.gd" id="2_hyqja"]
 
 [node name="StartSecuence" type="Control"]
 layout_mode = 3
