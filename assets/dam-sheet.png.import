@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpbr85w3k2iy1"
-path="res://.godot/imported/tilemap.png-58d8bf63975f8d4c2b1485dbff4cbb6b.ctex"
+uid="uid://blv7rulwh35im"
+path="res://.godot/imported/dam-sheet.png-69284f16d4084e9dda65268693949d9a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game_components/tilemap.png"
-dest_files=["res://.godot/imported/tilemap.png-58d8bf63975f8d4c2b1485dbff4cbb6b.ctex"]
+source_file="res://assets/dam-sheet.png"
+dest_files=["res://.godot/imported/dam-sheet.png-69284f16d4084e9dda65268693949d9a.ctex"]
 
 [params]
 
