@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bt3q8dtknnanx"]
+[gd_scene load_steps=6 format=3 uid="uid://bt3q8dtknnanx"]
 
 [ext_resource type="Texture2D" uid="uid://ck1d3og5vhx1o" path="res://assets/beaver.png" id="1_fcsi6"]
 [ext_resource type="Script" path="res://Beaver.gd" id="1_xf0lf"]
@@ -9,6 +9,16 @@ height = 46.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sxtrg"]
 radius = 45.0444
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_jdmcd"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/0/sync = true
+properties/0/watch = false
+properties/1/path = NodePath("Beaver:flip_h")
+properties/1/spawn = false
+properties/1/sync = false
+properties/1/watch = false
 
 [node name="Beaver" type="CharacterBody2D"]
 z_index = 1
@@ -49,6 +59,9 @@ offset_right = 42.0
 offset_bottom = -36.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 horizontal_alignment = 1
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_jdmcd")
 
 [connection signal="area_entered" from="InteractionComponents/InteractionArea" to="." method="_on_interaction_area_area_entered"]
 [connection signal="area_exited" from="InteractionComponents/InteractionArea" to="." method="_on_interaction_area_area_exited"]

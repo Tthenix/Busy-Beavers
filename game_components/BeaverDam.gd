@@ -12,7 +12,7 @@ func _ready():
 func _process(delta):
 	pass
 	
-func interact(action: String):
+func interact(action: String, player_id):
 	logs_gathered += 1
 	var sprite = $Sprite2D
 	var frame = int(logs_needed / (float(sprite.vframes)) *logs_gathered)

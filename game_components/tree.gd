@@ -1,5 +1,6 @@
 class_name GameTree extends Interactable
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -9,7 +10,9 @@ func _ready():
 func _process(delta):
 	pass
 
-func interact(action: String):
+
+@rpc("any_peer", "call_local")
+func interact(action: String, player_id):
 	print(action)
 	var trunk = preload("res://game_components/tree_trunk.tscn").instantiate()
 	var tree_log = preload("res://game_components/tree_log.tscn").instantiate()

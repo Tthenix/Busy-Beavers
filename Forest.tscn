@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://b7dy8sxhaje0g"]
 
+[ext_resource type="Script" path="res://Forest.gd" id="1_0u8wo"]
 [ext_resource type="PackedScene" uid="uid://bt3q8dtknnanx" path="res://Beaver.tscn" id="1_hmtq2"]
-[ext_resource type="PackedScene" uid="uid://bpdg2mqp8wyo4" path="res://player.tscn" id="2_lhuce"]
 [ext_resource type="Texture2D" uid="uid://brcqb7tbvxuqn" path="res://assets/tilemap.png" id="2_tt6sg"]
 [ext_resource type="PackedScene" uid="uid://cq1fqto50t6or" path="res://game_components/tree.tscn" id="3_8gjy8"]
 [ext_resource type="PackedScene" uid="uid://gq4w3v4oeoem" path="res://Day_Night.tscn" id="5_0sb1h"]
@@ -24,16 +24,13 @@ texture = ExtResource("2_tt6sg")
 sources/0 = SubResource("TileSetAtlasSource_abfst")
 
 [node name="Forest" type="Node2D"]
-
-[node name="Player" parent="." instance=ExtResource("2_lhuce")]
+script = ExtResource("1_0u8wo")
+PlayerScene = ExtResource("1_hmtq2")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_62qj0")
 format = 2
 layer_0/tile_data = PackedInt32Array(983047, 65536, 11, 1572871, 65536, 11, 2162695, 65536, 11, 983056, 65536, 11, 1572880, 65536, 11, 2162704, 65536, 11, 393223, 65536, 11, 393232, 65536, 11, 393241, 65536, 11, 983065, 65536, 11, 393250, 65536, 1, 983074, 65536, 1, 1572898, 65536, 1, 2162722, 65536, 1, 2162713, 65536, 11, 1572889, 65536, 11, 2162731, 720896, 1, 1572907, 720896, 1, 983083, 720896, 1, 393259, 720896, 1, 2228222, 65536, 11, 1638398, 65536, 11, 1048574, 65536, 11, 458750, 65536, 11, 2818046, 65536, 11, 2752519, 65536, 11, 2752528, 65536, 11, 2752537, 65536, 11, 2752546, 65536, 1, 2752555, 720896, 1, -131074, 65536, 11, -196601, 65536, 11, -196592, 65536, 11, -196583, 65536, 11, -196574, 65536, 1, -196565, 720896, 1)
-
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_hmtq2")]
-position = Vector2(533, 316)
 
 [node name="Interactables" type="Node2D" parent="."]
 
@@ -54,6 +51,60 @@ position = Vector2(489, 684)
 [node name="Tree5" parent="Interactables/Trees" instance=ExtResource("3_8gjy8")]
 position = Vector2(347, 563)
 
+[node name="Tree6" parent="Interactables/Trees" instance=ExtResource("3_8gjy8")]
+position = Vector2(120, 645)
+
+[node name="Tree7" parent="Interactables/Trees" instance=ExtResource("3_8gjy8")]
+position = Vector2(44, 481)
+
+[node name="Tree8" parent="Interactables/Trees" instance=ExtResource("3_8gjy8")]
+position = Vector2(20, 257)
+
+[node name="Tree9" parent="Interactables/Trees" instance=ExtResource("3_8gjy8")]
+position = Vector2(161, 205)
+
+[node name="Tree10" parent="Interactables/Trees" instance=ExtResource("3_8gjy8")]
+position = Vector2(45, 67)
+
+[node name="Tree11" parent="Interactables/Trees" instance=ExtResource("3_8gjy8")]
+position = Vector2(249, 50)
+
+[node name="Tree12" parent="Interactables/Trees" instance=ExtResource("3_8gjy8")]
+position = Vector2(427, 59)
+
+[node name="Tree13" parent="Interactables/Trees" instance=ExtResource("3_8gjy8")]
+position = Vector2(379, 660)
+
+[node name="Tree14" parent="Interactables/Trees" instance=ExtResource("3_8gjy8")]
+position = Vector2(420, 715)
+
+[node name="Tree15" parent="Interactables/Trees" instance=ExtResource("3_8gjy8")]
+position = Vector2(304, 633)
+
+[node name="Tree16" parent="Interactables/Trees" instance=ExtResource("3_8gjy8")]
+position = Vector2(223, 529)
+
+[node name="Tree17" parent="Interactables/Trees" instance=ExtResource("3_8gjy8")]
+position = Vector2(124, 388)
+
+[node name="Tree18" parent="Interactables/Trees" instance=ExtResource("3_8gjy8")]
+position = Vector2(203, 300)
+
+[node name="Tree19" parent="Interactables/Trees" instance=ExtResource("3_8gjy8")]
+position = Vector2(281, 249)
+
+[node name="Tree20" parent="Interactables/Trees" instance=ExtResource("3_8gjy8")]
+position = Vector2(243, 137)
+
+[node name="Tree21" parent="Interactables/Trees" instance=ExtResource("3_8gjy8")]
+position = Vector2(439, 592)
+
+[node name="Tree22" parent="Interactables/Trees" instance=ExtResource("3_8gjy8")]
+position = Vector2(526, 560)
+
+[node name="Tree23" parent="Interactables/Trees" instance=ExtResource("3_8gjy8")]
+position = Vector2(291, 483)
+
 [node name="DaytoNIght" parent="." instance=ExtResource("5_0sb1h")]
 visible = false
 
@@ -69,56 +120,10 @@ position = Vector2(440, 232)
 position = Vector2(685, 240)
 logs_needed = 20
 
-[node name="Tree" parent="." instance=ExtResource("3_8gjy8")]
-position = Vector2(120, 645)
+[node name="SpawnPoints" type="Node2D" parent="."]
 
-[node name="Tree2" parent="." instance=ExtResource("3_8gjy8")]
-position = Vector2(44, 481)
+[node name="0" type="Node2D" parent="SpawnPoints" groups=["PlayerSpawnPoint"]]
+position = Vector2(564, 192)
 
-[node name="Tree3" parent="." instance=ExtResource("3_8gjy8")]
-position = Vector2(20, 257)
-
-[node name="Tree4" parent="." instance=ExtResource("3_8gjy8")]
-position = Vector2(161, 205)
-
-[node name="Tree5" parent="." instance=ExtResource("3_8gjy8")]
-position = Vector2(45, 67)
-
-[node name="Tree6" parent="." instance=ExtResource("3_8gjy8")]
-position = Vector2(249, 50)
-
-[node name="Tree7" parent="." instance=ExtResource("3_8gjy8")]
-position = Vector2(427, 59)
-
-[node name="Tree8" parent="." instance=ExtResource("3_8gjy8")]
-position = Vector2(379, 660)
-
-[node name="Tree9" parent="." instance=ExtResource("3_8gjy8")]
-position = Vector2(420, 715)
-
-[node name="Tree10" parent="." instance=ExtResource("3_8gjy8")]
-position = Vector2(304, 633)
-
-[node name="Tree11" parent="." instance=ExtResource("3_8gjy8")]
-position = Vector2(223, 529)
-
-[node name="Tree12" parent="." instance=ExtResource("3_8gjy8")]
-position = Vector2(124, 388)
-
-[node name="Tree13" parent="." instance=ExtResource("3_8gjy8")]
-position = Vector2(203, 300)
-
-[node name="Tree14" parent="." instance=ExtResource("3_8gjy8")]
-position = Vector2(281, 249)
-
-[node name="Tree15" parent="." instance=ExtResource("3_8gjy8")]
-position = Vector2(243, 137)
-
-[node name="Tree16" parent="." instance=ExtResource("3_8gjy8")]
-position = Vector2(439, 592)
-
-[node name="Tree17" parent="." instance=ExtResource("3_8gjy8")]
-position = Vector2(526, 560)
-
-[node name="Tree18" parent="." instance=ExtResource("3_8gjy8")]
-position = Vector2(291, 483)
+[node name="1" type="Node2D" parent="SpawnPoints" groups=["PlayerSpawnPoint"]]
+position = Vector2(400, 383)

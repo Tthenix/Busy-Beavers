@@ -4,7 +4,6 @@ class_name Interactable extends Area2D
 @export var interact_type = "none"
 @export var interact_value = "none"
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -14,6 +13,7 @@ func _ready():
 func _process(delta):
 	pass
 
-func interact(action: String):
+@rpc("any_peer", "call_local")
+func interact(action: String, player_id):
 	pass
 

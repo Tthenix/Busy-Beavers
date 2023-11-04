@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Beaver Game"
-run/main_scene="res://Forest.tscn"
+run/main_scene="res://MP_menu.tscn"
 config/features=PackedStringArray("4.1", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameManager="*res://GameManager.gd"
 
 [display]
 
