@@ -11,11 +11,12 @@ height = 36.0
 radius = 10.198
 
 [node name="Tree" type="Area2D"]
+z_index = 2
 collision_layer = 2
 collision_mask = 0
 monitoring = false
 script = ExtResource("1_77oj4")
-interact_label = "Árbol"
+interact_label = "Morder"
 interact_type = "tree"
 
 [node name="Pine" type="Sprite2D" parent="."]

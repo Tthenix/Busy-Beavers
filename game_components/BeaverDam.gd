@@ -1,19 +1,19 @@
-class_name Interactable extends Area2D
+class_name BeaverDam extends Interactable
 
-@export var interact_label = "none"
-@export var interact_type = "none"
-@export var interact_value = "none"
-
+@export var logs_needed = 10
+var logs_gathered = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$Sprite2D.frame = 0
 	pass # Replace with function body.
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
-
+	
 func interact(action: String):
-	pass
-
+	logs_gathered += 1
+	var sprite = $Sprite2D
+	var frame = int((float(sprite.vframes) / logs_needed) *logs_gathered)
+	sprite.frame = frame

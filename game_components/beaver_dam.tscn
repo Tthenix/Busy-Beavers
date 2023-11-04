@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://de7owlbkouy7p"]
+
+[ext_resource type="Script" path="res://game_components/BeaverDam.gd" id="1_cwae1"]
+[ext_resource type="Texture2D" uid="uid://blv7rulwh35im" path="res://assets/dam-sheet.png" id="2_fe3lt"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hswyf"]
+radius = 27.0
+height = 276.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8rvor"]
+size = Vector2(235, 49)
+
+[node name="BeaverDam" type="Area2D"]
+collision_layer = 2
+collision_mask = 0
+monitoring = false
+script = ExtResource("1_cwae1")
+interact_label = "Agregar Tronco"
+interact_type = "dam"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 9)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_hswyf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -7)
+scale = Vector2(1.6, 1.6)
+texture = ExtResource("2_fe3lt")
+vframes = 17
+frame = 16
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1.5, 7)
+shape = SubResource("RectangleShape2D_8rvor")
