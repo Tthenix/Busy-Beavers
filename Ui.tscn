@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://dn0rvq367rhuv"]
+[gd_scene load_steps=7 format=3 uid="uid://dn0rvq367rhuv"]
 
+[ext_resource type="Script" path="res://Ui.gd" id="1_7w4ux"]
 [ext_resource type="Texture2D" uid="uid://ck1d3og5vhx1o" path="res://assets/beaver.png" id="1_edxmv"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5tdv7"]
@@ -36,6 +37,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.56, 0.56)
+script = ExtResource("1_7w4ux")
 metadata/_edit_horizontal_guides_ = [-113.0]
 
 [node name="PlayerInfo1" type="Panel" parent="."]
@@ -98,7 +100,7 @@ offset_bottom = -57.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_styles/fill = SubResource("StyleBoxFlat_bqvax")
-value = 25.0
+value = 23.0
 rounded = true
 
 [node name="Label" type="Label" parent="PlayerInfo1/PlayerPanel"]
@@ -118,6 +120,7 @@ theme_override_font_sizes/font_size = 39
 text = "Player 1"
 
 [node name="PlayerInfo2" type="Panel" parent="."]
+layout_mode = 0
 offset_left = 33.0
 offset_top = 300.0
 offset_right = 557.0

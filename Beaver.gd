@@ -19,6 +19,7 @@ func _ready():
 	$MultiplayerSynchronizer.set_multiplayer_authority(1)
 	if isActivePlayer():
 		update_interactions()
+		$Camera2D.make_current()
 	
 func isActivePlayer():
 	return multiplayer.get_unique_id() == playerId
@@ -105,6 +106,8 @@ func update_interactions():
 			label_text = interaction.interact_label
 	interaction_label.text = label_text
 
+
+# Server only
 func execute_interaction(action: String):
 	if all_interactions:
 		var curr_interaction: Interactable = all_interactions[0]
@@ -114,6 +117,7 @@ func execute_interaction(action: String):
 				"dam":
 					curr_interaction.interact.rpc(action, playerId)
 					holding.interact.rpc("use", playerId)
+					GameManager.add_score.rpc(1, playerId)
 					holding = null
 				_:
 					dropHeldElement()

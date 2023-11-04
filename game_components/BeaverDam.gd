@@ -1,11 +1,13 @@
 class_name BeaverDam extends Interactable
 
-@export var logs_needed = 10
+var logs_needed = GameManager.logs_needed
 var logs_gathered = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$Sprite2D.frame = 0
+	interact_label = "Agregar Tronco"
+	interact_type = "dam"
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

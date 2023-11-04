@@ -1,6 +1,7 @@
 extends Node
 
 var Players = {}
+var logs_needed = 16
 
 signal score_updated
 
@@ -10,6 +11,7 @@ func _ready():
 
 func start_game():
 	score_updated.emit()
+	
 
 @rpc("any_peer", "call_local")
 func add_score(value: int, player: int):
