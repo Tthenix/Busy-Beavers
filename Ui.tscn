@@ -1,6 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://dn0rvq367rhuv"]
+[gd_scene load_steps=7 format=3 uid="uid://ip0nmteo10ni"]
 
-[ext_resource type="Script" path="res://game_components/scenes/forest/Ui.gd" id="1_7w4ux"]
+[ext_resource type="Script" path="res://Ui.gd" id="1_7w4ux"]
 [ext_resource type="Texture2D" uid="uid://ck1d3og5vhx1o" path="res://assets/beaver.png" id="1_edxmv"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5tdv7"]
@@ -87,7 +87,7 @@ grow_vertical = 2
 texture = ExtResource("1_edxmv")
 expand_mode = 1
 
-[node name="LogBar1" type="ProgressBar" parent="PlayerInfo1/PlayerPanel"]
+[node name="ProgressBar" type="ProgressBar" parent="PlayerInfo1/PlayerPanel"]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -100,6 +100,7 @@ offset_bottom = -57.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_styles/fill = SubResource("StyleBoxFlat_bqvax")
+value = 23.0
 rounded = true
 
 [node name="Label" type="Label" parent="PlayerInfo1/PlayerPanel"]
@@ -121,9 +122,9 @@ text = "Player 1"
 [node name="PlayerInfo2" type="Panel" parent="."]
 layout_mode = 0
 offset_left = 33.0
-offset_top = 301.786
+offset_top = 300.0
 offset_right = 557.0
-offset_bottom = 552.786
+offset_bottom = 551.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_5tdv7")
 
 [node name="PlayerPanel" type="Panel" parent="PlayerInfo2"]
@@ -165,7 +166,7 @@ grow_vertical = 2
 texture = ExtResource("1_edxmv")
 expand_mode = 1
 
-[node name="LogBar2" type="ProgressBar" parent="PlayerInfo2/PlayerPanel"]
+[node name="ProgressBar" type="ProgressBar" parent="PlayerInfo2/PlayerPanel"]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
