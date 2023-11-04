@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://b7dy8sxhaje0g"]
+[gd_scene load_steps=12 format=3 uid="uid://b7dy8sxhaje0g"]
 
 [ext_resource type="Script" path="res://game_components/scenes/forest/Forest.gd" id="1_0u8wo"]
 [ext_resource type="PackedScene" uid="uid://bt3q8dtknnanx" path="res://game_components/entities/Beaver.tscn" id="1_hmtq2"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://ddw0mw65ab3hy" path="res://game_components/entities/tree_log.tscn" id="6_ftnsd"]
 [ext_resource type="PackedScene" uid="uid://dn0rvq367rhuv" path="res://game_components/scenes/forest/Ui.tscn" id="6_qsral"]
 [ext_resource type="PackedScene" uid="uid://de7owlbkouy7p" path="res://game_components/entities/beaver_dam.tscn" id="7_vahh6"]
+[ext_resource type="PackedScene" uid="uid://diibieknnwwuh" path="res://game_components/transition/fade_to_black.tscn" id="9_6hfk5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_abfst"]
 texture = ExtResource("2_tt6sg")
@@ -105,9 +106,6 @@ position = Vector2(526, 560)
 [node name="Tree23" parent="Interactables/Trees" instance=ExtResource("3_8gjy8")]
 position = Vector2(291, 483)
 
-[node name="DaytoNIght" parent="." instance=ExtResource("5_0sb1h")]
-visible = false
-
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Control" parent="CanvasLayer" instance=ExtResource("6_qsral")]
@@ -132,3 +130,11 @@ position = Vector2(564, 192)
 
 [node name="1" type="Node2D" parent="SpawnPoints" groups=["PlayerSpawnPoint"]]
 position = Vector2(400, 383)
+
+[node name="FadeToBlack" parent="." instance=ExtResource("9_6hfk5")]
+
+[node name="DaytoNight" parent="." instance=ExtResource("5_0sb1h")]
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="fadeComplete" from="FadeToBlack" to="." method="go_to_ending"]

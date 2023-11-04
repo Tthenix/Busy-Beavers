@@ -32,7 +32,7 @@ func time_step():
 func start_game():
 	var scene = load("res://game_components/scenes/forest/Forest.tscn").instantiate()
 	get_tree().root.add_child(scene) 
-	self.hide()
+	self.queue_free()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

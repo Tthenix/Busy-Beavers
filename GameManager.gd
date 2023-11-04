@@ -1,7 +1,8 @@
 extends Node
 
 var Players = {}
-var logs_needed = 16
+var logs_needed = 15
+var game_length = 5
 
 signal score_updated
 
@@ -11,14 +12,12 @@ func _ready():
 
 func start_game():
 	score_updated.emit()
-	
 
 @rpc("any_peer", "call_local")
 func add_score(value: int, player: int):
 	for p in Players:
 		if Players[p].id == player:
 			Players[p].score += value
-	
 	score_updated.emit()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
