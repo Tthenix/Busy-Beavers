@@ -13,6 +13,9 @@ func _process(delta):
 
 @rpc("any_peer", "call_local")
 func interact(action, playerId):
+	if action == "use":
+		self.queue_free()
+		return
 	heldBy = playerId
 	if (playerId == heldBy):
 		heldBy = null

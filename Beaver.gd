@@ -40,7 +40,7 @@ func _process(delta):
 			if isServer():
 				sendInput("interact", null)
 			else:
-				sendInput.rpc_id(1, "interact")
+				sendInput.rpc_id(1, "interact", null)
 
 @rpc("any_peer", "call_remote")
 func sendInput(input,args):
@@ -113,7 +113,7 @@ func execute_interaction(action: String):
 			match curr_interaction.interact_type:
 				"dam":
 					curr_interaction.interact.rpc(action, playerId)
-					holding.queue_free()
+					holding.interact.rpc("use", playerId)
 					holding = null
 				_:
 					dropHeldElement()
@@ -129,9 +129,11 @@ func execute_interaction(action: String):
 func pickUpElement(element: Interactable):
 	holding = element
 	element.z_index = 2
-	
+
+
 func dropHeldElement():
 	holding.interact.rpc("drop", playerId)
 	holding.z_index =1
 	holding.global_position.y += holdingHeight
 	holding = null
+

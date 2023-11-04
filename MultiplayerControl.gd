@@ -1,6 +1,6 @@
 extends Control
 
-@export var Address = "127.0.0.1"
+@export var Address = "192.168.1.2"
 @export var port = 8910
 var peer: ENetMultiplayerPeer
 var server_available = false
