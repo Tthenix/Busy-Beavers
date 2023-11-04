@@ -4,8 +4,8 @@ var state = 'day'
 
 var change_state = false
 
-var lenght_of_day = 15
-var lenght_of_night = 8
+var lenght_of_day = 120
+var lenght_of_night = 30
 
 func _ready():
 	if state == "day":

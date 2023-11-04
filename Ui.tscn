@@ -1,0 +1,196 @@
+[gd_scene load_steps=6 format=3 uid="uid://dn0rvq367rhuv"]
+
+[ext_resource type="Texture2D" uid="uid://ck1d3og5vhx1o" path="res://assets/beaver.png" id="1_edxmv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5tdv7"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ibkrt"]
+bg_color = Color(0.87451, 0.254902, 0.313726, 1)
+border_color = Color(0.8, 0.8, 0.8, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ejj7d"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bqvax"]
+bg_color = Color(0.929412, 0.333333, 0.372549, 1)
+
+[node name="Control" type="Control"]
+top_level = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.56, 0.56)
+metadata/_edit_horizontal_guides_ = [-113.0]
+
+[node name="PlayerInfo1" type="Panel" parent="."]
+layout_mode = 1
+offset_left = 33.0
+offset_top = 28.0
+offset_right = 557.0
+offset_bottom = 279.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_5tdv7")
+
+[node name="PlayerPanel" type="Panel" parent="PlayerInfo1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -254.0
+offset_top = -117.0
+offset_right = 254.0
+offset_bottom = 117.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ibkrt")
+
+[node name="Panel" type="Panel" parent="PlayerInfo1/PlayerPanel"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 21.5
+offset_right = 210.0
+offset_bottom = 211.5
+theme_override_styles/panel = SubResource("StyleBoxFlat_ejj7d")
+
+[node name="TextureRect" type="TextureRect" parent="PlayerInfo1/PlayerPanel/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -82.0
+offset_top = -82.0
+offset_right = 82.0
+offset_bottom = 82.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_edxmv")
+expand_mode = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="PlayerInfo1/PlayerPanel"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 233.0
+offset_top = -105.0
+offset_right = -21.0
+offset_bottom = -57.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/fill = SubResource("StyleBoxFlat_bqvax")
+value = 25.0
+rounded = true
+
+[node name="Label" type="Label" parent="PlayerInfo1/PlayerPanel"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -227.0
+offset_top = -59.5
+offset_right = -77.0
+offset_bottom = -2.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 39
+text = "Player 1"
+
+[node name="PlayerInfo2" type="Panel" parent="."]
+offset_left = 33.0
+offset_top = 300.0
+offset_right = 557.0
+offset_bottom = 551.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_5tdv7")
+
+[node name="PlayerPanel" type="Panel" parent="PlayerInfo2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -254.0
+offset_top = -117.0
+offset_right = 254.0
+offset_bottom = 117.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ibkrt")
+
+[node name="Panel" type="Panel" parent="PlayerInfo2/PlayerPanel"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 21.5
+offset_right = 210.0
+offset_bottom = 211.5
+theme_override_styles/panel = SubResource("StyleBoxFlat_ejj7d")
+
+[node name="TextureRect" type="TextureRect" parent="PlayerInfo2/PlayerPanel/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -82.0
+offset_top = -82.0
+offset_right = 82.0
+offset_bottom = 82.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_edxmv")
+expand_mode = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="PlayerInfo2/PlayerPanel"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 233.0
+offset_top = -105.0
+offset_right = -21.0
+offset_bottom = -57.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/fill = SubResource("StyleBoxFlat_bqvax")
+value = 25.0
+rounded = true
+
+[node name="Label" type="Label" parent="PlayerInfo2/PlayerPanel"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -227.0
+offset_top = -59.5
+offset_right = -77.0
+offset_bottom = -2.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 39
+text = "Player 1"

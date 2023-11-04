@@ -41,13 +41,5 @@ monitorable = false
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionComponents/InteractionArea"]
 shape = SubResource("CircleShape2D_sxtrg")
 
-[node name="InteractionLabel" type="Label" parent="InteractionComponents"]
-offset_left = -94.0
-offset_top = -55.0
-offset_bottom = -29.0
-text = "Action Label"
-horizontal_alignment = 2
-vertical_alignment = 1
-
 [connection signal="area_entered" from="InteractionComponents/InteractionArea" to="." method="_on_interaction_area_area_entered"]
 [connection signal="area_exited" from="InteractionComponents/InteractionArea" to="." method="_on_interaction_area_area_exited"]

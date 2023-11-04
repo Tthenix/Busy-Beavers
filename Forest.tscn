@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://b7dy8sxhaje0g"]
+[gd_scene load_steps=9 format=3 uid="uid://b7dy8sxhaje0g"]
 
 [ext_resource type="PackedScene" uid="uid://bt3q8dtknnanx" path="res://Beaver.tscn" id="1_hmtq2"]
-[ext_resource type="PackedScene" uid="uid://bpdg2mqp8wyo4" path="res://player.tscn" id="2_lhuce"]
+[ext_resource type="PackedScene" path="res://player.tscn" id="2_lhuce"]
 [ext_resource type="Texture2D" uid="uid://brcqb7tbvxuqn" path="res://assets/tilemap.png" id="2_tt6sg"]
 [ext_resource type="PackedScene" uid="uid://cq1fqto50t6or" path="res://game_components/tree.tscn" id="3_8gjy8"]
 [ext_resource type="PackedScene" uid="uid://gq4w3v4oeoem" path="res://Day_Night.tscn" id="5_0sb1h"]
+[ext_resource type="PackedScene" uid="uid://dn0rvq367rhuv" path="res://Ui.tscn" id="6_qsral"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_abfst"]
 texture = ExtResource("2_tt6sg")
@@ -50,3 +51,7 @@ position = Vector2(732, 605)
 position = Vector2(347, 563)
 
 [node name="DaytoNIght" parent="." instance=ExtResource("5_0sb1h")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" parent="CanvasLayer" instance=ExtResource("6_qsral")]
