@@ -1,11 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://de7owlbkouy7p"]
+[gd_scene load_steps=6 format=3 uid="uid://de7owlbkouy7p"]
 
 [ext_resource type="Script" path="res://game_components/entities/BeaverDam.gd" id="1_cwae1"]
 [ext_resource type="Texture2D" uid="uid://blv7rulwh35im" path="res://assets/dam-sheet.png" id="2_fe3lt"]
+[ext_resource type="Texture2D" uid="uid://3cbjwnqvwdgg" path="res://assets/dotBlue.png" id="3_ar7kh"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hswyf"]
-radius = 27.0
-height = 276.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b78k8"]
+size = Vector2(67.999, 278)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8rvor"]
 size = Vector2(235, 49)
@@ -21,7 +21,7 @@ interact_type = "dam"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 9)
 rotation = 1.5708
-shape = SubResource("CapsuleShape2D_hswyf")
+shape = SubResource("RectangleShape2D_b78k8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -7)
@@ -35,3 +35,18 @@ frame = 16
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(1.5, 7)
 shape = SubResource("RectangleShape2D_8rvor")
+
+[node name="DotBlue" type="Sprite2D" parent="."]
+position = Vector2(1.49999, 8)
+scale = Vector2(1.64091, 1.28333)
+texture = ExtResource("3_ar7kh")
+
+[node name="2" type="Label" parent="."]
+offset_left = -105.0
+offset_top = -67.0
+offset_right = 114.0
+offset_bottom = -5.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "Trae troncos aquí para construir una represa"
+vertical_alignment = 1
