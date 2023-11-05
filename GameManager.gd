@@ -1,7 +1,7 @@
 extends Node
 
 var Players = {}
-var logs_needed = 50
+var logs_needed = 32
 var game_length = 130
 
 signal score_updated
