@@ -29,7 +29,6 @@ func isServer():
 
 func _process(delta):
 	if isActivePlayer():
-	
 		if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 			var mouse_pos = get_global_mouse_position()
 			if isServer():
@@ -42,6 +41,17 @@ func _process(delta):
 				sendInput("interact", null)
 			else:
 				sendInput.rpc_id(1, "interact", null)
+	
+	# Audio
+	var audio: AudioStreamPlayer2D = $AudioStreamPlayer2D
+	if velocity:
+		if !audio.playing:
+			audio.play()
+	else:
+		if audio.playing:
+			audio.stop()
+			
+		
 
 @rpc("any_peer", "call_remote")
 func sendInput(input,args):
@@ -65,13 +75,24 @@ func _physics_process(delta):
 				target = null
 			
 		# Face moving direction
-		var sprite = $Beaver
-		if velocity.x > 0:
-			sprite.flip_h = false
-			sprite.offset.x = -100
-		elif velocity.x < 0:
-			sprite.flip_h = true
-			sprite.offset.x = 100
+		
+		var sprite = $AnimatedSprite2D
+		if velocity.x == 0:
+			if holding:
+				if holding.interact_type == "tree_log":
+					sprite.play("idle_log")
+			else:
+				sprite.play("idle")
+		else:
+			if holding:
+				if holding.interact_type == "tree_log":
+					sprite.play("carry_log")
+			else:
+				sprite.play("walking")
+			if velocity.x > 0:
+				sprite.flip_h = false
+			elif velocity.x < 0:
+				sprite.flip_h = true
 			
 		if holding:
 			holding.global_position = Vector2(self.global_position.x, self.global_position.y - holdingHeight)

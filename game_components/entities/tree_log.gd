@@ -15,6 +15,7 @@ func _process(delta):
 
 @rpc("any_peer", "call_local")
 func interact(action, playerId):
+	visible = false
 	var sound= thud_sound.instantiate()
 	sound.global_position = global_position
 	get_parent().add_child(sound)
@@ -24,6 +25,7 @@ func interact(action, playerId):
 		return
 	if (playerId == heldBy):
 		heldBy = null
+		visible = true
 	else:
 		heldBy = playerId
 		
