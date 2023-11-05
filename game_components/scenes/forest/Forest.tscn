@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://b7dy8sxhaje0g"]
+[gd_scene load_steps=27 format=3 uid="uid://b7dy8sxhaje0g"]
 
 [ext_resource type="Script" path="res://game_components/scenes/forest/Forest.gd" id="1_0u8wo"]
 [ext_resource type="PackedScene" uid="uid://bt3q8dtknnanx" path="res://game_components/entities/Beaver.tscn" id="1_hmtq2"]
@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://bkyml1etjmars" path="res://assets/Sprites/FlorRoja.png" id="14_cm8je"]
 [ext_resource type="Texture2D" uid="uid://ikqhepywdigk" path="res://assets/Sprites/SmallGrass.png" id="15_vr8s4"]
 [ext_resource type="Texture2D" uid="uid://dxd0yhqhbap2l" path="res://assets/Sprites/FlorWhite.png" id="16_l8dv4"]
+[ext_resource type="Texture2D" uid="uid://nk7sx0ivctku" path="res://assets/Sprites/axeHouse.png" id="17_vwgx2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_16eoo"]
 texture = ExtResource("3_3jri5")
@@ -560,7 +561,7 @@ position = Vector2(-332, 1399)
 position = Vector2(-671, 1326)
 
 [node name="Tree23" parent="Interactables/Trees" instance=ExtResource("3_8gjy8")]
-position = Vector2(-1021, -781)
+position = Vector2(-339, -825)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -572,14 +573,13 @@ z_index = 0
 position = Vector2(440, 232)
 
 [node name="Dams" type="Node2D" parent="."]
-position = Vector2(440, 232)
+position = Vector2(403, 299)
 
 [node name="0" parent="Dams" instance=ExtResource("7_vahh6")]
-position = Vector2(245, 5)
+position = Vector2(276, 6)
 
 [node name="1" parent="Dams" instance=ExtResource("7_vahh6")]
-position = Vector2(-1198, 8)
-flipped = true
+position = Vector2(-1166, 3)
 
 [node name="SpawnPoints" type="Node2D" parent="."]
 
@@ -3105,7 +3105,7 @@ position = Vector2(-958.5, -916.5)
 texture = ExtResource("15_vr8s4")
 
 [node name="SmallGrass105" type="Sprite2D" parent="SmallGrass"]
-position = Vector2(-1031.5, -797.5)
+position = Vector2(-349.5, -841.5)
 texture = ExtResource("15_vr8s4")
 
 [node name="SmallGrass106" type="Sprite2D" parent="SmallGrass"]
@@ -3595,6 +3595,11 @@ texture = ExtResource("16_l8dv4")
 [node name="FlorWhite" type="Sprite2D" parent="FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite/FlorWhite"]
 position = Vector2(-461, -283)
 texture = ExtResource("16_l8dv4")
+
+[node name="AxeHouse" type="Sprite2D" parent="."]
+position = Vector2(-1027, -887)
+rotation = 0.0130273
+texture = ExtResource("17_vwgx2")
 
 [connection signal="dam_complete" from="Dams/0" to="." method="good_ending"]
 [connection signal="dam_complete" from="Dams/1" to="." method="good_ending"]
