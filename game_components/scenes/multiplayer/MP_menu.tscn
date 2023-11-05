@@ -78,7 +78,8 @@ text = "Unirse
 [node name="NameLabel2" type="Label" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "Servidor [ ip:puerto ]"
+text = "Introduce los datos del servidor
+Formato:  [ ip:puerto ]"
 horizontal_alignment = 1
 
 [node name="JoinIP" type="LineEdit" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer"]
