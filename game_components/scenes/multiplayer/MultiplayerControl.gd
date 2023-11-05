@@ -17,13 +17,21 @@ func _ready():
 	multiplayer.peer_disconnected.connect(player_disconnected)
 	multiplayer.connected_to_server.connect(server_connected)
 	multiplayer.connection_failed.connect(connection_failed)
+	$HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/JoinIP.text = Address + ":" + str(port)
 	if "--server" in OS.get_cmdline_args():
 		isHeadless = true
 		create_server()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	var ipText = $HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/JoinIP.text
+	var label = $HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/NameLabel2
+	var parts = ipText.split(":")
+	if parts.size() != 2:
+		label.text = "Servidor [ ip:puerto ]" + "(Invalido)"
+		return
+	Address = parts[0]
+	port = int(parts[1])
 
 @rpc("any_peer", "call_remote")
 func disconnectPeer():
@@ -96,10 +104,11 @@ func create_server():
 	$"HBoxContainer/VBoxContainer/IP label".text = "IP: " + getLocalIp()
 	$"HBoxContainer/VBoxContainer/IP label".visible = true
 	$HBoxContainer/VBoxContainer/Host.disabled = true
-	$HBoxContainer/VBoxContainer/Join.visible = false
+	$HBoxContainer/VBoxContainer/PanelContainer.visible = false
 	$HBoxContainer/VBoxContainer/NameLabel.visible = false
 	$HBoxContainer/VBoxContainer/MarginContainer/LineEdit.editable = false
 	$HBoxContainer/VBoxContainer/MarginContainer/LineEdit.visible = false
+	$HBoxContainer/VBoxContainer/StartGame.visible = true
 	print("Waiting for Players!")
 	
 	
@@ -112,11 +121,13 @@ func _on_join_button_down():
 	peer.get_host().compress(ENetConnection.COMPRESS_RANGE_CODER)
 	multiplayer.set_multiplayer_peer(peer)
 	server_available = true
-	$HBoxContainer/VBoxContainer/Join.disabled = true
+	$HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/Join.disabled = true
+	$HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/JoinIP.editable = false
 	$HBoxContainer/VBoxContainer/Host.visible = false
 	$HBoxContainer/VBoxContainer/NameLabel.visible = false
 	$HBoxContainer/VBoxContainer/MarginContainer/LineEdit.editable = false
 	$HBoxContainer/VBoxContainer/MarginContainer/LineEdit.visible = false
+	$HBoxContainer/VBoxContainer/StartGame.visible = true
 	print("Joined")
 
 

@@ -2,6 +2,7 @@ class_name BeaverDam extends Interactable
 
 var logs_needed = GameManager.logs_needed
 var logs_gathered = 0
+@export var flipped = false
 
 signal dam_complete
 
@@ -10,6 +11,7 @@ func _ready():
 	$Sprite2D.frame = 0
 	interact_label = "Agregar Tronco"
 	interact_type = "dam"
+	$Sprite2D.flip_h = flipped
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

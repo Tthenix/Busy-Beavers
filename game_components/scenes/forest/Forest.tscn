@@ -562,10 +562,7 @@ position = Vector2(-1021, -781)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Control" parent="CanvasLayer" instance=ExtResource("6_qsral")]
-offset_left = -3.0
-offset_top = -3.0
-offset_right = -3.0
-offset_bottom = -3.0
+size_flags_horizontal = 0
 
 [node name="TreeLog" parent="." instance=ExtResource("6_ftnsd")]
 z_index = 0
@@ -579,6 +576,7 @@ position = Vector2(245, 5)
 
 [node name="1" parent="Dams" instance=ExtResource("7_vahh6")]
 position = Vector2(-1198, 8)
+flipped = true
 
 [node name="SpawnPoints" type="Node2D" parent="."]
 
@@ -586,7 +584,7 @@ position = Vector2(-1198, 8)
 position = Vector2(429, 275)
 
 [node name="1" type="Node2D" parent="SpawnPoints" groups=["PlayerSpawnPoint"]]
-position = Vector2(-479, 144)
+position = Vector2(-479, 310)
 
 [node name="FadeToBlack" parent="." instance=ExtResource("9_6hfk5")]
 
