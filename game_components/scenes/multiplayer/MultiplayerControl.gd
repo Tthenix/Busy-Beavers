@@ -141,8 +141,10 @@ func _on_start_game_button_down():
 func getLocalIp():
 	var IPs = IP.get_local_addresses()
 	for ip in IPs:
-		if ip.split(".").size() == 4:
-			return ip
+		var parts = ip.split(".")
+		if parts.size() == 4:
+			if ip != "127.0.0.1":
+				return ip
 
 
 func _on_back_button_down():
