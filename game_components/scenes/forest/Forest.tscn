@@ -635,7 +635,6 @@ physics_material_override = SubResource("PhysicsMaterial_52pm7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limites/LeftLimits"]
 position = Vector2(227.885, 56.4237)
-scale = Vector2(1, 1)
 shape = SubResource("SegmentShape2D_4cxag")
 
 [node name="DownLimits" type="StaticBody2D" parent="Limites"]
@@ -645,7 +644,6 @@ physics_material_override = SubResource("PhysicsMaterial_52pm7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limites/DownLimits"]
 position = Vector2(226.466, 57.7428)
-scale = Vector2(1, 1)
 shape = SubResource("SegmentShape2D_qv02q")
 
 [node name="RightLimits" type="StaticBody2D" parent="Limites"]
@@ -656,7 +654,6 @@ physics_material_override = SubResource("PhysicsMaterial_52pm7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limites/RightLimits"]
 position = Vector2(227.885, 56.4237)
-scale = Vector2(1, 1)
 shape = SubResource("SegmentShape2D_4cxag")
 
 [node name="RightLimits2" type="StaticBody2D" parent="Limites"]
@@ -667,7 +664,6 @@ physics_material_override = SubResource("PhysicsMaterial_52pm7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limites/RightLimits2"]
 position = Vector2(227.885, 56.4237)
-scale = Vector2(1, 1)
 shape = SubResource("SegmentShape2D_4cxag")
 
 [node name="RightLimits3" type="StaticBody2D" parent="Limites"]
@@ -678,7 +674,6 @@ physics_material_override = SubResource("PhysicsMaterial_52pm7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limites/RightLimits3"]
 position = Vector2(227.885, 56.4237)
-scale = Vector2(1, 1)
 shape = SubResource("SegmentShape2D_4cxag")
 
 [node name="TopLimits" type="StaticBody2D" parent="Limites"]
@@ -688,7 +683,6 @@ physics_material_override = SubResource("PhysicsMaterial_52pm7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limites/TopLimits"]
 position = Vector2(226.466, 57.7428)
-scale = Vector2(1, 1)
 shape = SubResource("SegmentShape2D_qv02q")
 
 [node name="TreeDown" type="Sprite2D" parent="."]
@@ -698,942 +692,754 @@ texture = ExtResource("14_6rdwa")
 
 [node name="Tree2" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-28.421, 32.9323)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-51.4285, 32.4811)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree3" type="Sprite2D" parent="TreeDown"]
 position = Vector2(15.3383, 32.9323)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree5" type="Sprite2D" parent="TreeDown"]
 position = Vector2(58.1954, 33.8345)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree6" type="Sprite2D" parent="TreeDown"]
 position = Vector2(35.1879, 33.3834)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree7" type="Sprite2D" parent="TreeDown"]
 position = Vector2(101.955, 33.8345)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree8" type="Sprite2D" parent="TreeDown"]
 position = Vector2(80.7517, 33.8345)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree9" type="Sprite2D" parent="TreeDown"]
 position = Vector2(142.105, 34.2856)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree10" type="Sprite2D" parent="TreeDown"]
 position = Vector2(119.098, 33.8345)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree11" type="Sprite2D" parent="TreeDown"]
 position = Vector2(185.864, 34.2856)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree12" type="Sprite2D" parent="TreeDown"]
 position = Vector2(228.721, 35.1879)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree13" type="Sprite2D" parent="TreeDown"]
 position = Vector2(205.714, 34.7368)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree14" type="Sprite2D" parent="TreeDown"]
 position = Vector2(272.481, 35.1879)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree15" type="Sprite2D" parent="TreeDown"]
 position = Vector2(251.278, 35.1879)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree16" type="Sprite2D" parent="TreeDown"]
 position = Vector2(164.661, 34.2856)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree17" type="Sprite2D" parent="TreeDown"]
 position = Vector2(313.533, 37.4435)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree18" type="Sprite2D" parent="TreeDown"]
 position = Vector2(290.526, 36.9924)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree19" type="Sprite2D" parent="TreeDown"]
 position = Vector2(357.293, 37.4435)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree20" type="Sprite2D" parent="TreeDown"]
 position = Vector2(400.15, 38.3458)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree21" type="Sprite2D" parent="TreeDown"]
 position = Vector2(377.142, 37.8947)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree22" type="Sprite2D" parent="TreeDown"]
 position = Vector2(443.909, 38.3458)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree23" type="Sprite2D" parent="TreeDown"]
 position = Vector2(422.706, 38.3458)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree24" type="Sprite2D" parent="TreeDown"]
 position = Vector2(484.059, 38.7969)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree25" type="Sprite2D" parent="TreeDown"]
 position = Vector2(461.052, 38.3458)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree26" type="Sprite2D" parent="TreeDown"]
 position = Vector2(527.819, 38.7969)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree27" type="Sprite2D" parent="TreeDown"]
 position = Vector2(570.676, 39.6992)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree28" type="Sprite2D" parent="TreeDown"]
 position = Vector2(547.668, 39.248)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree29" type="Sprite2D" parent="TreeDown"]
 position = Vector2(614.435, 39.6992)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree30" type="Sprite2D" parent="TreeDown"]
 position = Vector2(593.007, 40.4796)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree31" type="Sprite2D" parent="TreeDown"]
 position = Vector2(506.616, 38.7969)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree32" type="Sprite2D" parent="TreeDown"]
 position = Vector2(336.09, 37.4435)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree33" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-174.586, 32.9323)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree34" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-197.594, 32.4811)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree35" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-130.827, 32.9323)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree36" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-87.9698, 33.8345)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree37" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-110.977, 33.3834)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree38" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-44.2105, 33.8345)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree39" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-65.4134, 33.8345)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree40" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-4.06015, 34.2856)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree41" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-27.0676, 33.8345)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree42" type="Sprite2D" parent="TreeDown"]
 position = Vector2(39.6992, 34.2856)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree43" type="Sprite2D" parent="TreeDown"]
 position = Vector2(82.5563, 35.1879)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree44" type="Sprite2D" parent="TreeDown"]
 position = Vector2(59.5488, 34.7368)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree45" type="Sprite2D" parent="TreeDown"]
 position = Vector2(126.316, 35.1879)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree46" type="Sprite2D" parent="TreeDown"]
 position = Vector2(105.113, 35.1879)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree47" type="Sprite2D" parent="TreeDown"]
 position = Vector2(18.4962, 34.2856)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree48" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-152.03, 32.9323)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree49" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-22.5563, 90.224)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree50" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-45.5638, 89.7728)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree51" type="Sprite2D" parent="TreeDown"]
 position = Vector2(21.203, 90.224)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree52" type="Sprite2D" parent="TreeDown"]
 position = Vector2(64.0601, 91.1262)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree53" type="Sprite2D" parent="TreeDown"]
 position = Vector2(41.0526, 90.6751)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree54" type="Sprite2D" parent="TreeDown"]
 position = Vector2(107.819, 91.1262)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree55" type="Sprite2D" parent="TreeDown"]
 position = Vector2(86.6165, 91.1262)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree56" type="Sprite2D" parent="TreeDown"]
 position = Vector2(147.97, 91.5773)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree57" type="Sprite2D" parent="TreeDown"]
 position = Vector2(124.962, 91.1262)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree58" type="Sprite2D" parent="TreeDown"]
 position = Vector2(191.729, 91.5773)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree59" type="Sprite2D" parent="TreeDown"]
 position = Vector2(234.586, 92.4796)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree60" type="Sprite2D" parent="TreeDown"]
 position = Vector2(211.579, 92.0285)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree61" type="Sprite2D" parent="TreeDown"]
 position = Vector2(278.346, 92.4796)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree62" type="Sprite2D" parent="TreeDown"]
 position = Vector2(257.143, 92.4796)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree63" type="Sprite2D" parent="TreeDown"]
 position = Vector2(170.526, 91.5773)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree64" type="Sprite2D" parent="TreeDown"]
 position = Vector2(319.398, 94.7352)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree65" type="Sprite2D" parent="TreeDown"]
 position = Vector2(296.391, 94.2841)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree66" type="Sprite2D" parent="TreeDown"]
 position = Vector2(363.157, 94.7352)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree67" type="Sprite2D" parent="TreeDown"]
 position = Vector2(406.014, 95.6375)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree68" type="Sprite2D" parent="TreeDown"]
 position = Vector2(383.007, 95.1864)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree69" type="Sprite2D" parent="TreeDown"]
 position = Vector2(449.774, 95.6375)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree70" type="Sprite2D" parent="TreeDown"]
 position = Vector2(428.571, 95.6375)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree71" type="Sprite2D" parent="TreeDown"]
 position = Vector2(489.924, 96.0886)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree72" type="Sprite2D" parent="TreeDown"]
 position = Vector2(466.917, 95.6375)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree73" type="Sprite2D" parent="TreeDown"]
 position = Vector2(533.683, 96.0886)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree74" type="Sprite2D" parent="TreeDown"]
 position = Vector2(576.541, 96.9909)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree75" type="Sprite2D" parent="TreeDown"]
 position = Vector2(553.533, 96.5397)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree76" type="Sprite2D" parent="TreeDown"]
 position = Vector2(620.3, 96.9909)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree77" type="Sprite2D" parent="TreeDown"]
 position = Vector2(598.871, 97.7713)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree78" type="Sprite2D" parent="TreeDown"]
 position = Vector2(512.48, 96.0886)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree79" type="Sprite2D" parent="TreeDown"]
 position = Vector2(341.954, 94.7352)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree80" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-168.721, 90.224)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree81" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-191.729, 89.7728)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree82" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-124.962, 90.224)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree83" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-82.1051, 91.1262)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree84" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-105.113, 90.6751)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree85" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-38.3457, 91.1262)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree86" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-59.5487, 91.1262)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree87" type="Sprite2D" parent="TreeDown"]
 position = Vector2(1.80455, 91.5773)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree88" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-21.2029, 91.1262)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree89" type="Sprite2D" parent="TreeDown"]
 position = Vector2(45.5639, 91.5773)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree90" type="Sprite2D" parent="TreeDown"]
 position = Vector2(88.421, 92.4796)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree91" type="Sprite2D" parent="TreeDown"]
 position = Vector2(65.4135, 92.0285)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree92" type="Sprite2D" parent="TreeDown"]
 position = Vector2(132.18, 92.4796)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree93" type="Sprite2D" parent="TreeDown"]
 position = Vector2(110.977, 92.4796)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree94" type="Sprite2D" parent="TreeDown"]
 position = Vector2(24.3609, 91.5773)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree95" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-146.165, 90.224)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree96" type="Sprite2D" parent="TreeDown"]
 position = Vector2(4.57764e-05, 90.224)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree4" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-28.421, -57.2918)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree97" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-51.4285, -57.7429)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree98" type="Sprite2D" parent="TreeDown"]
 position = Vector2(15.3383, -57.2918)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree99" type="Sprite2D" parent="TreeDown"]
 position = Vector2(58.1954, -56.3895)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree100" type="Sprite2D" parent="TreeDown"]
 position = Vector2(35.1879, -56.8406)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree101" type="Sprite2D" parent="TreeDown"]
 position = Vector2(101.955, -56.3895)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree102" type="Sprite2D" parent="TreeDown"]
 position = Vector2(80.7517, -56.3895)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree103" type="Sprite2D" parent="TreeDown"]
 position = Vector2(142.105, -55.9384)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree104" type="Sprite2D" parent="TreeDown"]
 position = Vector2(119.098, -56.3895)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree105" type="Sprite2D" parent="TreeDown"]
 position = Vector2(185.864, -55.9384)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree106" type="Sprite2D" parent="TreeDown"]
 position = Vector2(228.721, -55.0361)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree107" type="Sprite2D" parent="TreeDown"]
 position = Vector2(205.714, -55.4873)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree108" type="Sprite2D" parent="TreeDown"]
 position = Vector2(272.481, -55.0361)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree109" type="Sprite2D" parent="TreeDown"]
 position = Vector2(251.278, -55.0361)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree110" type="Sprite2D" parent="TreeDown"]
 position = Vector2(164.661, -55.9384)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree111" type="Sprite2D" parent="TreeDown"]
 position = Vector2(313.533, -52.7805)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree112" type="Sprite2D" parent="TreeDown"]
 position = Vector2(290.526, -53.2316)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree113" type="Sprite2D" parent="TreeDown"]
 position = Vector2(357.293, -52.7805)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree114" type="Sprite2D" parent="TreeDown"]
 position = Vector2(400.15, -51.8782)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree115" type="Sprite2D" parent="TreeDown"]
 position = Vector2(377.142, -52.3294)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree116" type="Sprite2D" parent="TreeDown"]
 position = Vector2(443.909, -51.8782)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree117" type="Sprite2D" parent="TreeDown"]
 position = Vector2(422.706, -51.8782)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree118" type="Sprite2D" parent="TreeDown"]
 position = Vector2(484.059, -51.4271)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree119" type="Sprite2D" parent="TreeDown"]
 position = Vector2(461.052, -51.8782)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree120" type="Sprite2D" parent="TreeDown"]
 position = Vector2(527.819, -51.4271)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree121" type="Sprite2D" parent="TreeDown"]
 position = Vector2(570.676, -50.5249)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree122" type="Sprite2D" parent="TreeDown"]
 position = Vector2(547.668, -50.976)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree123" type="Sprite2D" parent="TreeDown"]
 position = Vector2(614.435, -50.5249)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree124" type="Sprite2D" parent="TreeDown"]
 position = Vector2(593.007, -49.7444)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree125" type="Sprite2D" parent="TreeDown"]
 position = Vector2(506.616, -51.4271)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree126" type="Sprite2D" parent="TreeDown"]
 position = Vector2(336.09, -52.7805)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree127" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-174.586, -57.2918)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree128" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-197.594, -57.7429)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree129" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-130.827, -57.2918)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree130" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-87.9698, -56.3895)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree131" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-110.977, -56.8406)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree132" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-44.2105, -56.3895)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree133" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-65.4135, -56.3895)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree134" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-4.06018, -55.9384)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree135" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-27.0677, -56.3895)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree136" type="Sprite2D" parent="TreeDown"]
 position = Vector2(39.6992, -55.9384)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree137" type="Sprite2D" parent="TreeDown"]
 position = Vector2(82.5562, -55.0361)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree138" type="Sprite2D" parent="TreeDown"]
 position = Vector2(59.5488, -55.4873)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree139" type="Sprite2D" parent="TreeDown"]
 position = Vector2(126.316, -55.0361)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree140" type="Sprite2D" parent="TreeDown"]
 position = Vector2(105.113, -55.0361)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree141" type="Sprite2D" parent="TreeDown"]
 position = Vector2(18.4962, -55.9384)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree142" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-152.03, -57.2918)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree143" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-22.5564, 0)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree144" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-45.5638, -0.451172)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree145" type="Sprite2D" parent="TreeDown"]
 position = Vector2(21.203, 0)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree146" type="Sprite2D" parent="TreeDown"]
 position = Vector2(64.06, 0.902222)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree147" type="Sprite2D" parent="TreeDown"]
 position = Vector2(41.0526, 0.451111)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree148" type="Sprite2D" parent="TreeDown"]
 position = Vector2(107.819, 0.902222)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree149" type="Sprite2D" parent="TreeDown"]
 position = Vector2(86.6164, 0.902222)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree150" type="Sprite2D" parent="TreeDown"]
 position = Vector2(147.97, 1.35339)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree151" type="Sprite2D" parent="TreeDown"]
 position = Vector2(124.962, 0.902222)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree152" type="Sprite2D" parent="TreeDown"]
 position = Vector2(191.729, 1.35339)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree153" type="Sprite2D" parent="TreeDown"]
 position = Vector2(234.586, 2.25562)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree154" type="Sprite2D" parent="TreeDown"]
 position = Vector2(211.579, 1.8045)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree155" type="Sprite2D" parent="TreeDown"]
 position = Vector2(278.345, 2.25562)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree156" type="Sprite2D" parent="TreeDown"]
 position = Vector2(257.142, 2.25562)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree157" type="Sprite2D" parent="TreeDown"]
 position = Vector2(170.526, 1.35339)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree158" type="Sprite2D" parent="TreeDown"]
 position = Vector2(319.398, 4.51123)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree159" type="Sprite2D" parent="TreeDown"]
 position = Vector2(296.391, 4.06012)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree160" type="Sprite2D" parent="TreeDown"]
 position = Vector2(363.157, 4.51123)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree161" type="Sprite2D" parent="TreeDown"]
 position = Vector2(406.014, 5.41351)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree162" type="Sprite2D" parent="TreeDown"]
 position = Vector2(383.007, 4.9624)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree163" type="Sprite2D" parent="TreeDown"]
 position = Vector2(449.774, 5.41351)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree164" type="Sprite2D" parent="TreeDown"]
 position = Vector2(428.571, 5.41351)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree165" type="Sprite2D" parent="TreeDown"]
 position = Vector2(489.924, 5.86462)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree166" type="Sprite2D" parent="TreeDown"]
 position = Vector2(466.917, 5.41351)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree167" type="Sprite2D" parent="TreeDown"]
 position = Vector2(533.683, 5.86462)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree168" type="Sprite2D" parent="TreeDown"]
 position = Vector2(576.54, 6.76691)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree169" type="Sprite2D" parent="TreeDown"]
 position = Vector2(553.533, 6.31573)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree170" type="Sprite2D" parent="TreeDown"]
 position = Vector2(620.3, 6.76691)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree171" type="Sprite2D" parent="TreeDown"]
 position = Vector2(598.871, 7.5473)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree172" type="Sprite2D" parent="TreeDown"]
 position = Vector2(512.48, 5.86462)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree173" type="Sprite2D" parent="TreeDown"]
 position = Vector2(341.954, 4.51123)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree174" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-168.722, 0)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree175" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-191.729, -0.451172)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree176" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-124.962, 0)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree177" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-82.1051, 0.902222)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree178" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-105.113, 0.451111)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree179" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-38.3458, 0.902222)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree180" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-59.5488, 0.902222)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree182" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-21.203, 0.902222)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree183" type="Sprite2D" parent="TreeDown"]
 position = Vector2(45.5638, 1.35339)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree184" type="Sprite2D" parent="TreeDown"]
 position = Vector2(88.4209, 2.25562)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree185" type="Sprite2D" parent="TreeDown"]
 position = Vector2(65.4134, 1.8045)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree186" type="Sprite2D" parent="TreeDown"]
 position = Vector2(132.18, 2.25562)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree187" type="Sprite2D" parent="TreeDown"]
 position = Vector2(110.977, 2.25562)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree188" type="Sprite2D" parent="TreeDown"]
 position = Vector2(24.3609, 1.35339)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree189" type="Sprite2D" parent="TreeDown"]
 position = Vector2(-146.165, 0)
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="TreeTop" type="Sprite2D" parent="."]
@@ -1652,7 +1458,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree184" type="Sprite2D" parent="TreeTop"]
 position = Vector2(53.6841, 2.25592)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree185" type="Sprite2D" parent="TreeTop"]
@@ -1678,7 +1483,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree190" type="Sprite2D" parent="TreeTop"]
 position = Vector2(224.887, 5.98529)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree191" type="Sprite2D" parent="TreeTop"]
@@ -1704,7 +1508,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree196" type="Sprite2D" parent="TreeTop"]
 position = Vector2(-109.849, -2.13501)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree197" type="Sprite2D" parent="TreeTop"]
@@ -1730,7 +1533,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree202" type="Sprite2D" parent="TreeTop"]
 position = Vector2(-271.353, -6.64624)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree203" type="Sprite2D" parent="TreeTop"]
@@ -1756,7 +1558,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree208" type="Sprite2D" parent="TreeTop"]
 position = Vector2(397.218, 8.69208)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree209" type="Sprite2D" parent="TreeTop"]
@@ -1782,7 +1583,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree214" type="Sprite2D" parent="TreeTop"]
 position = Vector2(562.33, 9.5943)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree215" type="Sprite2D" parent="TreeTop"]
@@ -1807,7 +1607,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree220" type="Sprite2D" parent="TreeTop"]
 position = Vector2(53.6841, 2.25592)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree221" type="Sprite2D" parent="TreeTop"]
@@ -1833,7 +1632,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree226" type="Sprite2D" parent="TreeTop"]
 position = Vector2(224.887, 5.98529)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree227" type="Sprite2D" parent="TreeTop"]
@@ -1859,7 +1657,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree232" type="Sprite2D" parent="TreeTop"]
 position = Vector2(-109.849, -2.13501)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree233" type="Sprite2D" parent="TreeTop"]
@@ -1885,7 +1682,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree238" type="Sprite2D" parent="TreeTop"]
 position = Vector2(-271.353, -6.64624)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree239" type="Sprite2D" parent="TreeTop"]
@@ -1911,7 +1707,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree244" type="Sprite2D" parent="TreeTop"]
 position = Vector2(397.218, 8.69208)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree245" type="Sprite2D" parent="TreeTop"]
@@ -1937,7 +1732,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree250" type="Sprite2D" parent="TreeTop"]
 position = Vector2(562.33, 9.5943)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree251" type="Sprite2D" parent="TreeTop"]
@@ -1963,7 +1757,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree256" type="Sprite2D" parent="TreeTop"]
 position = Vector2(56.3909, 36.0903)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree257" type="Sprite2D" parent="TreeTop"]
@@ -1989,7 +1782,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree262" type="Sprite2D" parent="TreeTop"]
 position = Vector2(227.594, 39.8199)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree263" type="Sprite2D" parent="TreeTop"]
@@ -2015,7 +1807,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree268" type="Sprite2D" parent="TreeTop"]
 position = Vector2(-107.143, 31.6996)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree269" type="Sprite2D" parent="TreeTop"]
@@ -2041,7 +1832,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree274" type="Sprite2D" parent="TreeTop"]
 position = Vector2(-268.646, 27.1883)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree275" type="Sprite2D" parent="TreeTop"]
@@ -2067,7 +1857,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree280" type="Sprite2D" parent="TreeTop"]
 position = Vector2(399.924, 42.5266)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree281" type="Sprite2D" parent="TreeTop"]
@@ -2093,7 +1882,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree286" type="Sprite2D" parent="TreeTop"]
 position = Vector2(565.037, 43.4289)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree287" type="Sprite2D" parent="TreeTop"]
@@ -2119,7 +1907,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree292" type="Sprite2D" parent="TreeTop"]
 position = Vector2(56.3909, 36.0903)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree293" type="Sprite2D" parent="TreeTop"]
@@ -2145,7 +1932,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree298" type="Sprite2D" parent="TreeTop"]
 position = Vector2(227.594, 39.8199)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree299" type="Sprite2D" parent="TreeTop"]
@@ -2171,7 +1957,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree304" type="Sprite2D" parent="TreeTop"]
 position = Vector2(-107.143, 31.6996)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree305" type="Sprite2D" parent="TreeTop"]
@@ -2197,7 +1982,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree310" type="Sprite2D" parent="TreeTop"]
 position = Vector2(-268.646, 27.1883)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree311" type="Sprite2D" parent="TreeTop"]
@@ -2223,7 +2007,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree316" type="Sprite2D" parent="TreeTop"]
 position = Vector2(399.924, 42.5266)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree317" type="Sprite2D" parent="TreeTop"]
@@ -2249,7 +2032,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree322" type="Sprite2D" parent="TreeTop"]
 position = Vector2(565.037, 43.4289)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree323" type="Sprite2D" parent="TreeTop"]
@@ -2275,7 +2057,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree328" type="Sprite2D" parent="TreeTop"]
 position = Vector2(64.5112, 78.0452)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree329" type="Sprite2D" parent="TreeTop"]
@@ -2301,7 +2082,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree334" type="Sprite2D" parent="TreeTop"]
 position = Vector2(235.714, 81.7747)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree335" type="Sprite2D" parent="TreeTop"]
@@ -2327,7 +2107,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree340" type="Sprite2D" parent="TreeTop"]
 position = Vector2(-99.0223, 73.6544)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree341" type="Sprite2D" parent="TreeTop"]
@@ -2353,7 +2132,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree346" type="Sprite2D" parent="TreeTop"]
 position = Vector2(-260.526, 69.1431)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree347" type="Sprite2D" parent="TreeTop"]
@@ -2379,7 +2157,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree352" type="Sprite2D" parent="TreeTop"]
 position = Vector2(408.045, 84.4814)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree353" type="Sprite2D" parent="TreeTop"]
@@ -2405,7 +2182,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree358" type="Sprite2D" parent="TreeTop"]
 position = Vector2(573.157, 85.3837)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree359" type="Sprite2D" parent="TreeTop"]
@@ -2431,7 +2207,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree364" type="Sprite2D" parent="TreeTop"]
 position = Vector2(64.5112, 78.0452)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree365" type="Sprite2D" parent="TreeTop"]
@@ -2457,7 +2232,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree370" type="Sprite2D" parent="TreeTop"]
 position = Vector2(235.714, 81.7747)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree371" type="Sprite2D" parent="TreeTop"]
@@ -2483,7 +2257,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree376" type="Sprite2D" parent="TreeTop"]
 position = Vector2(-99.0223, 73.6544)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree377" type="Sprite2D" parent="TreeTop"]
@@ -2509,7 +2282,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree382" type="Sprite2D" parent="TreeTop"]
 position = Vector2(-260.526, 69.1431)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree383" type="Sprite2D" parent="TreeTop"]
@@ -2535,7 +2307,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree388" type="Sprite2D" parent="TreeTop"]
 position = Vector2(408.045, 84.4814)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree389" type="Sprite2D" parent="TreeTop"]
@@ -2561,7 +2332,6 @@ texture = ExtResource("14_6rdwa")
 [node name="Tree394" type="Sprite2D" parent="TreeTop"]
 position = Vector2(573.157, 85.3837)
 rotation = -0.00827712
-scale = Vector2(1, 1)
 texture = ExtResource("14_6rdwa")
 
 [node name="Tree395" type="Sprite2D" parent="TreeTop"]

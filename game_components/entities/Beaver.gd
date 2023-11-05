@@ -20,6 +20,7 @@ func _ready():
 	if isActivePlayer():
 		update_interactions()
 		$Camera2D.make_current()
+		
 	
 func isActivePlayer():
 	return multiplayer.get_unique_id() == playerId
@@ -116,19 +117,26 @@ func _on_interaction_area_area_exited(area):
 	
 
 func update_interactions():
-	var interaction_label = $InteractionComponents/InteractionLabel
-	var label_text = ""
 	if all_interactions:
 		var interaction: Interactable = all_interactions[0]
-		if interaction.interact_type == "dam":
-			if holding:
-				label_text = interaction.interact_label
-		elif interaction.interact_type == "tree_log":
-			if !interaction.heldBy:
-				label_text = interaction.interact_label
-		else:
-			label_text = interaction.interact_label
-	interaction_label.text = label_text
+		print(interaction.interact_type)
+		match interaction.interact_type:
+			"dam":
+				if holding:
+					handleTooltip("build")
+			"tree_log":
+				if holding:
+					handleTooltip("drop")
+				else:
+					handleTooltip("pick_up")
+			"tree":
+				if !holding:
+					handleTooltip("gnaw")
+			_:
+				handleTooltip("no_action")
+	else:
+		print("No interaction")
+		handleTooltip("no_action")
 
 
 # Server only
@@ -153,6 +161,7 @@ func execute_interaction(action: String):
 					if !curr_interaction.heldBy:
 						pickUpElement(curr_interaction)
 						curr_interaction.interact.rpc(action, playerId)
+	update_interactions()
 
 
 func pickUpElement(element: Interactable):
@@ -166,3 +175,12 @@ func dropHeldElement():
 	holding.global_position.y += holdingHeight
 	holding = null
 
+func handleTooltip(action):
+	var icon = $InteractionComponents/ActionIcons
+	if action == "no_action":
+		icon.visible = false
+	else:
+		icon.visible = true
+	icon.play(action)
+	print(action)
+		
