@@ -101,7 +101,7 @@ func create_server():
 		print("Cannot host: " + str(error))
 	peer.get_host().compress(ENetConnection.COMPRESS_RANGE_CODER)
 	multiplayer.set_multiplayer_peer(peer)
-	$"HBoxContainer/VBoxContainer/IP label".text = "IP: " + getLocalIp() + ":" + str(port)
+	$"HBoxContainer/VBoxContainer/IP label".text = "Pasale estos datos al otro jugador:\nIp: " + "Usa tu ip local\n(busca en google como conseguir\nla ip para jugar en lan)\n" + "Puerto: " + str(port)
 	$"HBoxContainer/VBoxContainer/IP label".visible = true
 	$HBoxContainer/VBoxContainer/Host.disabled = true
 	$HBoxContainer/VBoxContainer/PanelContainer.visible = false
@@ -143,8 +143,11 @@ func getLocalIp():
 	for ip in IPs:
 		var parts = ip.split(".")
 		if parts.size() == 4:
-			if ip != "127.0.0.1":
-				return ip
+			if ip == "127.0.0.1":
+				continue
+			if parts[0] == "169":
+				continue
+			return ip
 
 
 func _on_back_button_down():
