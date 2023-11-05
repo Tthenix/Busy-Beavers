@@ -1,9 +1,13 @@
 extends Control
 
-@export var Address = "127.0.0.1"
+@export var Address = "127.0.0.1" # "192.168.1.2"
 @export var port = 8910
 var peer: ENetMultiplayerPeer
 var server_available = false
+var isHeadless = false
+var currentPlayers = 0
+var maxPlayers = 2
+var isStarted = false
 
 
 
@@ -14,15 +18,24 @@ func _ready():
 	multiplayer.connected_to_server.connect(server_connected)
 	multiplayer.connection_failed.connect(connection_failed)
 	if "--server" in OS.get_cmdline_args():
+		isHeadless = true
 		create_server()
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
 
+@rpc("any_peer", "call_remote")
+func disconnectPeer():
+	multiplayer.multiplayer_peer = null
+
 # Called from server and clients
 func player_connected(id):
+	if multiplayer.is_server():
+		if currentPlayers >= maxPlayers || isStarted:
+			disconnectPeer.rpc_id(id)
+			print("Rejected Connection")
+			return
 	print("Player Connected " + str(id))
 
 # Called from server and clients
@@ -47,7 +60,7 @@ func connection_failed():
 	
 @rpc("any_peer")
 func SendPlayerInformation(name, id):
-	print(multiplayer.get_unique_id(), name, id)
+	currentPlayers += 1
 	if !GameManager.Players.has(id):
 		print(name + " has joined")
 		GameManager.Players[id] = {
@@ -57,7 +70,6 @@ func SendPlayerInformation(name, id):
 		}
 	if multiplayer.is_server():
 		for i in GameManager.Players:
-			print("server" + GameManager.Players[i].name)
 			SendPlayerInformation.rpc(GameManager.Players[i].name, i)
 
 @rpc("any_peer", "call_local")
@@ -78,15 +90,30 @@ func create_server():
 		print("Cannot host: " + str(error))
 	peer.get_host().compress(ENetConnection.COMPRESS_RANGE_CODER)
 	multiplayer.set_multiplayer_peer(peer)
+	$"HBoxContainer/VBoxContainer/IP label".text = "IP: " + getLocalIp()
+	$"HBoxContainer/VBoxContainer/IP label".visible = true
+	$HBoxContainer/VBoxContainer/Host.disabled = true
+	$HBoxContainer/VBoxContainer/Join.visible = false
+	$HBoxContainer/VBoxContainer/NameLabel.visible = false
+	$HBoxContainer/VBoxContainer/MarginContainer/LineEdit.editable = false
+	$HBoxContainer/VBoxContainer/MarginContainer/LineEdit.visible = false
 	print("Waiting for Players!")
+	
 	
 
 func _on_join_button_down():
 	peer = ENetMultiplayerPeer.new()
-	peer.create_client(Address, port)
+	var error = peer.create_client(Address, port)
+	if error:
+		return error
 	peer.get_host().compress(ENetConnection.COMPRESS_RANGE_CODER)
 	multiplayer.set_multiplayer_peer(peer)
 	server_available = true
+	$HBoxContainer/VBoxContainer/Join.disabled = true
+	$HBoxContainer/VBoxContainer/Host.visible = false
+	$HBoxContainer/VBoxContainer/NameLabel.visible = false
+	$HBoxContainer/VBoxContainer/MarginContainer/LineEdit.editable = false
+	$HBoxContainer/VBoxContainer/MarginContainer/LineEdit.visible = false
 	print("Joined")
 
 
@@ -96,3 +123,16 @@ func _on_start_game_button_down():
 		SendPlayerInformation($HBoxContainer/VBoxContainer/MarginContainer/LineEdit.text, multiplayer.get_unique_id())
 	StartGame.rpc()
 	pass # Replace with function body.
+
+func getLocalIp():
+	var IPs = IP.get_local_addresses()
+	for ip in IPs:
+		if ip.split(".").size() == 4:
+			return ip
+
+
+func _on_back_button_down():
+	disconnectPeer()
+	var scene = load("res://game_components/scenes/MainMenu/main_menu.tscn").instantiate()
+	get_tree().root.add_child(scene)
+	self.queue_free()

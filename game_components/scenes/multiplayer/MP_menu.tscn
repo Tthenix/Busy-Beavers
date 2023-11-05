@@ -12,6 +12,15 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ipaqd")
 
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.886275, 0.886275, 0.886275, 1)
+
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 custom_minimum_size = Vector2(200, 2.08165e-12)
 layout_mode = 1
@@ -30,9 +39,10 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
 
-[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer"]
+[node name="NameLabel" type="Label" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
-text = "Name"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Nombre"
 horizontal_alignment = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/VBoxContainer"]
@@ -46,17 +56,31 @@ script = ExtResource("2_uviww")
 [node name="Host" type="Button" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 2
-text = "Host"
+text = "Hostear"
+
+[node name="IP label" type="Label" parent="HBoxContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 
 [node name="Join" type="Button" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
-text = "Join
+text = "Unirse
 "
 
 [node name="StartGame" type="Button" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
 text = "Start Game"
 
+[node name="MarginContainer2" type="MarginContainer" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_bottom = 50
+
+[node name="Back" type="Button" parent="HBoxContainer/VBoxContainer/MarginContainer2"]
+layout_mode = 2
+text = "Menú Principal"
+
 [connection signal="button_down" from="HBoxContainer/VBoxContainer/Host" to="." method="_on_host_button_down"]
 [connection signal="button_down" from="HBoxContainer/VBoxContainer/Join" to="." method="_on_join_button_down"]
 [connection signal="button_down" from="HBoxContainer/VBoxContainer/StartGame" to="." method="_on_start_game_button_down"]
+[connection signal="button_down" from="HBoxContainer/VBoxContainer/MarginContainer2/Back" to="." method="_on_back_button_down"]

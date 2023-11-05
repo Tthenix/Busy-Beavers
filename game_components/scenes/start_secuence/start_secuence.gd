@@ -27,7 +27,7 @@ func time_step():
 		timer.start()
 		nextStage.visible = true
 	else:
-		start_game()
+		start_game()$HBoxContainer/VBoxContainer/Join.disabled = true
 
 func start_game():
 	var scene = load("res://game_components/scenes/forest/Forest.tscn").instantiate()

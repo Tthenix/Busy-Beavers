@@ -12,5 +12,7 @@ func _process(delta):
 
 
 func _on_button_button_down():
-	get_tree().quit()
-	
+	self.queue_free()
+	var scene = load("res://game_components/scenes/multiplayer/MP_menu.tscn").instantiate()
+	get_tree().root.add_child(scene)
+	self.queue_free()
