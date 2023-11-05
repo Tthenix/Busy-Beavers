@@ -28,7 +28,12 @@ func go_to_ending():
 	var scene = load("res://game_components/scenes/endings/bad_ending.tscn").instantiate()
 	get_tree().root.add_child(scene) 
 	self.queue_free()
-	
+
+func good_ending():
+	var scene = load("res://game_components/scenes/endings/good_ending.tscn").instantiate()
+	get_tree().root.add_child(scene) 
+	self.queue_free()
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

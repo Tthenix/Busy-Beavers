@@ -1,8 +1,8 @@
 extends Node
 
 var Players = {}
-var logs_needed = 15
-var game_length = 5
+var logs_needed =4
+var game_length = 10
 
 signal score_updated
 
@@ -12,6 +12,13 @@ func _ready():
 
 func start_game():
 	score_updated.emit()
+
+@rpc("any_peer", "call_local")
+func newGame():
+	var scene = load("res://game_components/scenes/forest/Forest.tscn").instantiate()
+	get_tree().root.add_child(scene) 
+	for p in Players:
+		Players[p].score = 0
 
 @rpc("any_peer", "call_local")
 func add_score(value: int, player: int):

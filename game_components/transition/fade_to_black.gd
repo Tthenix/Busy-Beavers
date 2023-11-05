@@ -7,7 +7,6 @@ func _ready():
 	pass
 	
 func start_fade():
-	$ColorRect.color = "#00000000"
 	$ColorRect.visible = true
 	$AnimationPlayer.play("fade")
 

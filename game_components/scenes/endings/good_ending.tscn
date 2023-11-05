@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://du0vgak2gpos4"]
+[gd_scene load_steps=3 format=3 uid="uid://du0vgak2gpos4"]
 
 [ext_resource type="Texture2D" uid="uid://cvpmou354jpqi" path="res://assets/DALL·E 2023-11-04 17.21.07 - Cartoon of Two friendly beavers in a lodge.png" id="1_7shri"]
+[ext_resource type="Script" path="res://game_components/scenes/endings/good_ending.gd" id="1_bxt2y"]
 
 [node name="GoodEnding" type="Control"]
 layout_mode = 3
@@ -9,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_bxt2y")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -43,3 +45,5 @@ offset_top = 545.0
 offset_right = 636.0
 offset_bottom = 595.0
 text = "Salir"
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
