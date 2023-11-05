@@ -5,6 +5,7 @@ extends Control
 
 var timer = Timer.new()
 const times = [10,7,7,4]
+# const times = [1,1,1,1]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

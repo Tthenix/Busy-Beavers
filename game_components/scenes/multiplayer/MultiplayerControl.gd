@@ -35,6 +35,7 @@ func _process(delta):
 
 @rpc("any_peer", "call_remote")
 func disconnectPeer():
+	print("Dropped peer")
 	multiplayer.multiplayer_peer = null
 
 # Called from server and clients
@@ -68,7 +69,6 @@ func connection_failed():
 	
 @rpc("any_peer")
 func SendPlayerInformation(name, id):
-	currentPlayers += 1
 	if !GameManager.Players.has(id):
 		print(name + " has joined")
 		GameManager.Players[id] = {
