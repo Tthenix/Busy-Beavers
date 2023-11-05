@@ -1,7 +1,8 @@
-[gd_scene load_steps=18 format=3 uid="uid://du0vgak2gpos4"]
+[gd_scene load_steps=19 format=3 uid="uid://du0vgak2gpos4"]
 
 [ext_resource type="Script" path="res://game_components/scenes/endings/good_ending.gd" id="1_bxt2y"]
 [ext_resource type="Texture2D" uid="uid://c3fmldv30cgpe" path="res://assets/goodEnding.png" id="2_1r5a1"]
+[ext_resource type="AudioStream" uid="uid://xp2ssk11qwse" path="res://assets/goodEnding.mp3" id="3_nuvec"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_60y0y"]
 atlas = ExtResource("2_1r5a1")
@@ -122,7 +123,7 @@ script = ExtResource("1_bxt2y")
 position = Vector2(577, 323.625)
 scale = Vector2(3.68608, 3.68608)
 sprite_frames = SubResource("SpriteFrames_qdffg")
-frame_progress = 0.160555
+frame_progress = 0.380361
 
 [node name="Button" type="Button" parent="."]
 custom_minimum_size = Vector2(200, 75)
@@ -173,5 +174,9 @@ text = "¡Felicitaciones!
 Has trabajado en equipo y sobrevivido la noche"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_nuvec")
+autoplay = true
 
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]

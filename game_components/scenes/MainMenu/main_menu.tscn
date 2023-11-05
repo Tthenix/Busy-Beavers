@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://c7uvsl0lau7ke"]
+[gd_scene load_steps=4 format=3 uid="uid://c7uvsl0lau7ke"]
 
 [ext_resource type="Script" path="res://game_components/scenes/MainMenu/MainMenu.gd" id="1_gxefu"]
 [ext_resource type="Texture2D" uid="uid://cfmsvewgruabk" path="res://assets/Logo.png" id="2_l1n4c"]
+[ext_resource type="AudioStream" uid="uid://cfhuinygmdlyb" path="res://assets/woods.mp3" id="3_2glhh"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -77,5 +78,9 @@ custom_minimum_size = Vector2(200, 50)
 layout_mode = 2
 size_flags_horizontal = 4
 text = "Comenzar Juego"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_2glhh")
+autoplay = true
 
 [connection signal="button_down" from="HBoxContainer/VBoxContainer/MarginContainer/Button" to="." method="_on_button_button_down"]

@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2l86xk0nlpbx"]
+
+[ext_resource type="AudioStream" uid="uid://ldr1uxb044mf" path="res://assets/thud.mp3" id="1_bbq3y"]
+[ext_resource type="Script" path="res://game_components/sound_effects/SoundEffect.gd" id="2_rm0cw"]
+
+[node name="Thud" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_bbq3y")
+script = ExtResource("2_rm0cw")

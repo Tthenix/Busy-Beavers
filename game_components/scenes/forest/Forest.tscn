@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://b7dy8sxhaje0g"]
+[gd_scene load_steps=13 format=3 uid="uid://b7dy8sxhaje0g"]
 
 [ext_resource type="Script" path="res://game_components/scenes/forest/Forest.gd" id="1_0u8wo"]
 [ext_resource type="PackedScene" uid="uid://bt3q8dtknnanx" path="res://game_components/entities/Beaver.tscn" id="1_hmtq2"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://dn0rvq367rhuv" path="res://game_components/scenes/forest/Ui.tscn" id="6_qsral"]
 [ext_resource type="PackedScene" uid="uid://de7owlbkouy7p" path="res://game_components/entities/beaver_dam.tscn" id="7_vahh6"]
 [ext_resource type="PackedScene" uid="uid://diibieknnwwuh" path="res://game_components/transition/fade_to_black.tscn" id="9_6hfk5"]
+[ext_resource type="AudioStream" uid="uid://chafqkeati22f" path="res://assets/baseBBsong_game.mp3" id="10_bgcd0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_abfst"]
 texture = ExtResource("2_tt6sg")
@@ -136,6 +137,10 @@ position = Vector2(400, 383)
 [node name="DaytoNight" parent="." instance=ExtResource("5_0sb1h")]
 
 [node name="Timer" type="Timer" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_bgcd0")
+autoplay = true
 
 [connection signal="dam_complete" from="Dams/0" to="." method="good_ending"]
 [connection signal="dam_complete" from="Dams/1" to="." method="good_ending"]

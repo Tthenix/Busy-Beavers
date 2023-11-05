@@ -27,11 +27,14 @@ func time_step():
 		timer.start()
 		nextStage.visible = true
 	else:
-		start_game()$HBoxContainer/VBoxContainer/Join.disabled = true
+		start_game()
 
 func start_game():
 	var scene = load("res://game_components/scenes/forest/Forest.tscn").instantiate()
-	get_tree().root.add_child(scene) 
+	get_tree().root.add_child(scene)
+	var audio_node = get_node("AudioStreamPlayer")
+	if audio_node:
+		audio_node.queue_free()
 	self.queue_free()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

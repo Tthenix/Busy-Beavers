@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://bu3b18eo2txh"]
+
+[ext_resource type="AudioStream" uid="uid://5v5gagtlcrxl" path="res://assets/tree_fall.mp3" id="1_430m7"]
+[ext_resource type="Script" path="res://game_components/sound_effects/SoundEffect.gd" id="1_qq32f"]
+
+[node name="TreeFall" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_430m7")
+script = ExtResource("1_qq32f")

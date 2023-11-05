@@ -76,6 +76,9 @@ func SendPlayerInformation(name, id):
 func StartGame():
 	var scene = load("res://game_components/scenes/start_secuence/start_secuence.tscn").instantiate()
 	get_tree().root.add_child(scene)
+	var audio_node = get_node("AudioStreamPlayer")
+	remove_child(audio_node)
+	scene.add_child(audio_node)
 	self.hide()
 
 func _on_host_button_down():
@@ -135,4 +138,7 @@ func _on_back_button_down():
 	disconnectPeer()
 	var scene = load("res://game_components/scenes/MainMenu/main_menu.tscn").instantiate()
 	get_tree().root.add_child(scene)
+	var audio_node = get_node("AudioStreamPlayer")
+	remove_child(audio_node)
+	scene.add_child(audio_node)
 	self.queue_free()

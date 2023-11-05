@@ -15,4 +15,7 @@ func _on_button_button_down():
 	self.queue_free()
 	var scene = load("res://game_components/scenes/multiplayer/MP_menu.tscn").instantiate()
 	get_tree().root.add_child(scene)
+	var audio_node = get_node("AudioStreamPlayer")
+	remove_child(audio_node)
+	scene.add_child(audio_node)
 	self.queue_free()

@@ -1,7 +1,8 @@
-[gd_scene load_steps=20 format=3 uid="uid://b31absyuaj8sw"]
+[gd_scene load_steps=21 format=3 uid="uid://b31absyuaj8sw"]
 
 [ext_resource type="Script" path="res://game_components/scenes/endings/bad_ending.gd" id="1_6lt5c"]
 [ext_resource type="Texture2D" uid="uid://b4y1867hc0mf7" path="res://assets/BadEnding.png" id="2_veey0"]
+[ext_resource type="AudioStream" uid="uid://c47nagoifyi3d" path="res://assets/baseBBsongBadEndingLoop.mp3" id="3_xfjvj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vbgeu"]
 atlas = ExtResource("2_veey0")
@@ -166,6 +167,11 @@ text = "Intentar de nuevo"
 position = Vector2(575, 342)
 scale = Vector2(3.75, 3.75)
 sprite_frames = SubResource("SpriteFrames_85w6n")
-frame_progress = 0.441101
+frame = 4
+frame_progress = 0.345046
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_xfjvj")
+autoplay = true
 
 [connection signal="button_down" from="ColorRect/1000" to="." method="_on_button_button_down"]
