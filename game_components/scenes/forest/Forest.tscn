@@ -219,7 +219,6 @@ layer_0/tile_data = PackedInt32Array(327691, 131072, 1, 262155, 131072, 1, 19661
 [node name="water" type="TileMap" parent="terrain"]
 position = Vector2(49.4724, -59.4431)
 rotation = 0.00890827
-scale = Vector2(1, 1)
 tile_set = SubResource("TileSet_cgje4")
 format = 2
 layer_0/name = "terreno"
