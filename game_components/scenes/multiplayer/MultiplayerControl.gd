@@ -101,7 +101,7 @@ func create_server():
 		print("Cannot host: " + str(error))
 	peer.get_host().compress(ENetConnection.COMPRESS_RANGE_CODER)
 	multiplayer.set_multiplayer_peer(peer)
-	$"HBoxContainer/VBoxContainer/IP label".text = "IP: " + getLocalIp()
+	$"HBoxContainer/VBoxContainer/IP label".text = "IP: " + getLocalIp() + ":" + str(port)
 	$"HBoxContainer/VBoxContainer/IP label".visible = true
 	$HBoxContainer/VBoxContainer/Host.disabled = true
 	$HBoxContainer/VBoxContainer/PanelContainer.visible = false
